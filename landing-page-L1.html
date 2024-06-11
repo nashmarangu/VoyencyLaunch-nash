@@ -191,8 +191,8 @@
       }
       @media only screen and (max-width: 500px) {
         .bg {
-          height: 300px;
-          background-position: bottom;
+          height: 390px;
+          background-position: right;
         }
         .banner_search {
           text-align: center;
@@ -203,20 +203,48 @@
         display: none;
       }
       .trvl_insrt_box {
-        min-height: auto !important;
+        min-height: 300px !important;
         padding: 25px 20px 25px;
+      }
+      @media (max-width: 1199px) {
+        .trvl_insrt_box {
+          min-height: 380px !important;
+        }
+      }
+      @media (max-width: 991px) {
+        .trvl_insrt_box {
+          min-height: 420px !important;
+        }
       }
       .trvl_insrt_box p {
         padding-top: 12px;
       }
-      @media (max-width: 1199px) {
+      /* @media (max-width: 1199px) {
         .trvl_insrt_box {
           min-height: auto;
+        }
+      } */
+      @media (max-width: 768px) {
+        .trvl_insrt_box {
+          min-height: 260px !important;
+        }
+      }
+      @media (max-width: 568px) {
+        .trvl_insrt_box {
+          min-height: 320px !important;
         }
       }
       /* .trvl_dshbrd_lftCol {
         padding: 0 16px;
       } */
+      .top-head {
+        font-size: 35px !important;
+      }
+      @media (max-width: 568px) {
+        .top-head {
+          font-size: 25px !important;
+        }
+      }
       .trvl_hdng_lft h3 span {
         padding-right: 6px;
       }
@@ -270,6 +298,84 @@
         display: inline-block;
         margin-right: 2.2rem;
         padding: 0 10px;
+      }
+      .banner_search {
+        text-align: center;
+        padding: 12% 0 14%;
+        /* height: 400px; */
+      }
+      .sec_heading_lft {
+        margin-bottom: 30px;
+      }
+      /* .trvl_dshbrd_lftCol {
+        padding-right: unset !important;
+      } */
+      @media (max-width: 768px) {
+        .dropdown {
+          padding: 0 8%;
+        }
+      }
+      @media (max-width: 568px) {
+        p {
+          font-size: 16px;
+        }
+
+        h2 span {
+          font-size: 25px;
+        }
+        h2 {
+          font-size: 25px !important;
+        }
+        .banner_search {
+          padding: 35% 0;
+        }
+      }
+
+      /* scroll */
+      @media (max-width: 767px) {
+        .trvl_dshbrd_wrppr {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
+        }
+
+        .trvl_dshbrd_row {
+          display: flex;
+          flex-wrap: nowrap;
+        }
+
+        .trvl_dshbrd_lftCol {
+          flex: 0 0 auto;
+          width: 90%;
+          margin-right: 10px;
+        }
+        .trvl_insrt_box {
+          -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+        }
+        body
+          > main
+          > div.trvl_dshbrd_sec.cmn-gap
+          > div
+          > div
+          > div.trvl_dshbrd_wrppr
+          > div
+          > div:nth-child(3) {
+          padding-right: 2px !important;
+        }
+      }
+      @media (max-width: 767px) {
+        .trvl_dshbrd_wrppr {
+          padding: 10px; /* Add padding for better visibility */
+        }
+        .trvl_hdng_lft h3 {
+          font-size: 22px;
+        }
+        .sec_heading_lft {
+          margin-bottom: 10px;
+        }
+        .trvl_dshbrd_lftCol {
+          padding-left: 5px !important;
+        }
       }
     </style>
 
@@ -974,7 +1080,7 @@
         <div class="container">
           <div class="trvl_dshbrd_innr">
             <div class="sec_heading_lft">
-              <h2>Travel Dashborad</h2>
+              <h2 class="top-head">Your Travel Guide</h2>
             </div>
             <div class="trvl_dshbrd_wrppr">
               <div class="row trvl_dshbrd_row">
@@ -993,11 +1099,11 @@
                       </div>
                       <div class="trvl_hdng_rght">
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat.
+                          Discover your ideal destination by searching for a
+                          specific location or exploring by travel interest.
+                          Uncover what makes each destination unique, from its
+                          renowned attractions to popular neighborhoods and
+                          top-rated hotels by budget group.
                         </p>
                       </div>
                     </div>
@@ -1018,11 +1124,9 @@
                       </div>
                       <div class="trvl_hdng_rght">
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat.
+                          Discover the best time to visit your desired
+                          destination based on your preferences for weather,
+                          budget, events, and crowd levels.
                         </p>
                       </div>
                     </div>
@@ -1043,11 +1147,10 @@
                       </div>
                       <div class="trvl_hdng_rght">
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat.
+                          Discover the entry requirements for each destination,
+                          optimal transportation options, currency details, cost
+                          of living, local time zone, and destination safety
+                          measures.
                         </p>
                       </div>
                     </div>
@@ -1439,6 +1542,28 @@
       </div>
     </footer>
     <!--footer ends here-->
+
+    <div class="bottom-fixt-mne-all-pgs">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="dashboard.html"
+              ><img src="assets/images/home_hover.svg" alt=""
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="discvr"
+              ><img src="assets/images/discover_hover.svg" alt=""
+            /></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="assets/icons/love_8647296.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/easyResponsiveTabs.js"></script>

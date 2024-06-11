@@ -2654,7 +2654,7 @@ img {
 
 .banner_pg_innner .main_img img {
   width: 100%;
-  height: 330px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -2781,7 +2781,8 @@ img {
   font-size: 15px;
   line-height: 1.3;
   transition: 0.4s ease-in-out;
-  -webkit-transition: 0.4s ease-in-out;
+  /* -webkit-transition: 0.4s ease-in-out; */
+  -webkit-transition: 0s none;
 }
 
 .blgm_othr_cnt_part_btm h4 {
@@ -2830,8 +2831,9 @@ img {
 
 .blgm_othr_cnt_part:hover .blgm_othr_cnt_part_btm {
   margin: 0 10px;
-  transition: 0.4s ease-in-out;
-  -webkit-transition: 0.4s ease-in-out;
+  /* transition: 0.4s ease-in-out; */
+  /* -webkit-transition: 0.4s ease-in-out; */
+  -webkit-transition: 0s none;
 }
 
 .btm_footer_copyrt {
@@ -4817,7 +4819,7 @@ img {
 .discvr-knw-inner-tab-part .lft-dscvr-sty-lst .resp-tabs-list li {
   list-style: none;
   padding: 0 0 0 25px !important;
-  margin-bottom: 4px !important;
+  margin-bottom: 2px !important;
   position: relative;
   border: none !important;
 }
@@ -7421,13 +7423,13 @@ img {
   padding: 10px;
   box-shadow: 1px -4px 27px rgba(0, 0, 0, 0.2);
   display: none;
-  z-index: 1051;
+  z-index: 99999999;
 }
 
 .bottom-fixt-mne-all-pgs ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 0;
   padding: 0;
 }
@@ -12160,7 +12162,7 @@ html.disableScroll {
   font-weight: 300;
 }
 .upctrp-banner-img.banner_pg_innner .main_img img {
-  height: 325px;
+  height: 400px;
 }
 .modal-content .datepicker2 .ui-datepicker .ui-datepicker-prev {
   left: 24px;
@@ -12998,7 +13000,7 @@ body.modal-open {
   }
 
   .bg {
-    background: url(../images/Landscape-Mobile-min.jpg) top center no-repeat;
+    /* background: url(../images/Landscape-Mobile-min.jpg) top center no-repeat; */
     background-attachment: scroll;
     background-size: cover;
     margin: 42px 0 0 0;
@@ -13408,7 +13410,7 @@ body.modal-open {
 /*prosenjit-17-05-2022-css*/
 @media (max-width: 1799px) {
   .banner_pg_innner .main_img img {
-    height: 325px;
+    height: 400px;
   }
   .stay_wrap .deal_price {
     padding-bottom: 5px;
@@ -13450,7 +13452,7 @@ body.modal-open {
   }
 
   .banner_pg_innner .main_img img {
-    height: 325px;
+    height: 400px;
     object-fit: cover;
   }
 
@@ -19703,6 +19705,6 @@ width: 20%;
 .discvr-page-disclmr-lst-sec {
   padding-bottom: 60px;
 }
-.trvl_dshbrd_lftCol {
+/* .trvl_dshbrd_lftCol {
   padding-right: 0 !important;
-}
+} */
