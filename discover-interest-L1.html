@@ -231,6 +231,13 @@
         width: 50%;
         flex: 0 0 95% !important;
       }
+      .dash_cmn_gap {
+        /* padding: 37px 0 30px; */
+        padding: 30px 0px;
+      }
+      .sec_heading_lft.small_line_height {
+        margin-bottom: 30px;
+      }
 
       @media (max-width: 568px) {
         p {
@@ -246,7 +253,7 @@
           padding: 0 15px !important;
         }
         .banner_pg_innner .main_img img {
-          height: 390px;
+          height: 260px;
         }
         .dash_cmn_gap {
           padding: 20px 0 45px;
@@ -254,6 +261,16 @@
         .sec_heading_lft.small_line_height {
           margin-bottom: 20px;
         }
+      }
+      .bottom-fixt-mne-all-pgs ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom-fixt-mne-all-pgs ul li a p {
+        color: #000000;
+        font-size: 14px;
       }
     </style>
     <script src="assets/js/jquery.min.js"></script>
@@ -1102,18 +1119,23 @@
         <ul>
           <li>
             <a href="dashboard.html"
-              ><img src="assets/images/home_hover.svg" alt=""
-            /></a>
+              ><img src="assets/images/home_hover.svg" alt="" />
+              <p>Home</p>
+            </a>
           </li>
 
           <li>
             <a href="#" class="discvr"
-              ><img src="assets/images/discover_hover.svg" alt=""
-            /></a>
+              ><img src="assets/images/discover_hover.svg" alt="" />
+              <p>Discover</p>
+            </a>
           </li>
 
           <li>
-            <a href="#"><img src="assets/icons/love_8647296.png" alt="" /></a>
+            <a href="#"
+              ><img src="assets/icons/love_8647296.png" alt="" />
+              <p>Saved</p></a
+            >
           </li>
         </ul>
       </div>

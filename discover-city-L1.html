@@ -191,7 +191,7 @@
         display: none;
       }
       .trvl_insrt_box {
-        min-height: 276px !important;
+        min-height: 320px !important;
         padding: 25px 20px 25px;
       }
       .trvl_insrt_box p {
@@ -220,7 +220,7 @@
         padding-top: 12px;
       }
       .hot_deals_dahsboard.cmn-gap {
-        padding-bottom: 40px !important;
+        padding-bottom: 1px !important;
       }
       .usr_dropdwn .dropdown ul {
         width: 258px;
@@ -275,6 +275,7 @@
         flex-wrap: wrap;
         align-items: baseline;
         margin: 0 -8.5px -15px;
+        padding-right: 8px;
       }
       .discvr-knw-inner-tab-part .resp-tabs-list li {
         font-size: 22px;
@@ -361,8 +362,13 @@
       }
       .text-top {
         font-size: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
       }
+      .dscvr-knw-whr-stay-sec {
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 31px;
+}
       .dscvr-knw-whr-stay-tp-ttl h4 {
         font-size: 35px;
       }
@@ -377,7 +383,7 @@
       }
       .rght-img-mn-dscvr-knw-tb-dtls p {
         max-width: unset !important;
-        font-size: 20px;
+        font-size: 22px;
       }
       .discover-btn a {
         text-decoration: none;
@@ -403,12 +409,12 @@
       }
       .travel-para {
         display: flex;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
       .travel-con-head {
         font-weight: 300;
         font-size: 25px;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
       }
       .travel-readns-dcvr-tab-info h4 {
         font-size: 35px;
@@ -423,7 +429,7 @@
 
 .common-popup {
     padding: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
 }
 .modal-backdrop {
     position: fixed;
@@ -500,6 +506,7 @@ font-size: 14px !important;   }
 .travel-readns-dcvr-tab-inr-tab #ChildVerticalTab_2 .resp-tabs-list li {
    font-size: 18px !important;
     padding: 2px 12px !important;
+    font-weight: 400;
 }
 .trvl_hdng_row{
     margin: 0;
@@ -578,10 +585,10 @@ font-size: 14px !important;   }
     }
 }
 .top_beach_sttnd{
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 .paris-evt{
-  padding-top: 70px;
+  padding-top: 60px;
 }
 .rght-img-mn-dscvr-knw-tb-dtls h4 {
     font-size: 25px;
@@ -674,20 +681,24 @@ font-size: 14px !important;   }
 
 }
 }
+.stay_wrap{
+  justify-content: space-between;
+}
 .heart-slide {
     position: relative;
-    width: 45px;
+    width: 60px;
     height: 92px;
+    border-left: solid 1px #eee;
 }
     .stay_wrap .stay_txt {
         padding-left: 15px;
-        border-right: 1px solid #e9ecef;
+        /* border-right: 1px solid #e9ecef; */
         padding-right: 0px;
     }
-    .zzz-heart {
+.zzz-heart {
     position: absolute;
-    top: 10px;
-    left: 3px;
+    top: 0px;
+    left: 20px;
     z-index: 10;
 }
 /* .stay_map_info{
@@ -728,7 +739,6 @@ width: auto !important;
 #popupCommonTab12-2 > div.cmn-popupSubmit-wrap.popupCommon-margin.cmn-popupSubmit-wrap-withCheckBox > div{
       cursor: pointer;
     margin-bottom: 0;
-    margin-top: -80px;
     margin-left: 3px;
 
 }
@@ -784,8 +794,109 @@ padding-left: 5px;
     opacity: 1;
 }
 }
+@media (max-width: 1699px) {
+    .banner_pg_innner .main_img img {
+        height: 443px;
+        object-fit: cover;
+    }
+}
+.last-dcvr-tab-tvl-innr-details {
+    padding-top: 20px;
+}
+.note-height::placeholder{
+  padding: 10px;
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+
+}
+    .stay_wrap .stay_txt h4 {
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+       .bottom-fixt-mne-all-pgs ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom-fixt-mne-all-pgs ul li a p {
+        color: #000000;
+        font-size: 14px;
+      }
+       @media (max-width: 992px){ 
+        .right-arrow{
+        width: unset;
+      }}
+     .padd-bttm-tp {
+      padding-bottom: 30px !important;
+     }
+      @media (max-width: 440px){
+   .right-arrow {
+    width: 130px;
+}
+      }
+  
+      .loadMore-wrap {
+        display: none;
+      }
+  
+
+/* Initially hide the paragraphs after Summer */
+@media screen and (max-width: 548px) {
+      .loadMore-wrap {
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+}
+  .hide-below-548 {
+    display: none;
+  }
+}
+
+/* Show the paragraphs when the "show" class is added */
+.hide-below-548.show {
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+    .innr-chckbx-bst-tm-dcvr {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+.zzz-heart {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    z-index: 10;
+}
+.stay_wrap .stay_txt {
+    padding-left: 0px;
+    /* border-right: 1px solid #e9ecef; */
+    padding-right: 10px;
+}
+}
+
+
+/* cardzz */
+
+.stay_txt h4 span{
+width: 32px;
+}
+.stay_txt h4{
+  padding-bottom: 4px;
+}
+@media (max-width: 500px) {
+    .banner_pg_innner .main_img img {
+        height: 260px;
+        object-fit: cover;
+    }
+}
 
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body class="discoverknw-body body-tp-paddng">
@@ -3815,7 +3926,7 @@ padding-left: 5px;
                                     <span class="checkmark"></span>
                                   </label>
                                 </div>
-                                <input type="submit" value="Save" class="cmn-popupSubmit">
+                                <input type="submit" value="Done" class="cmn-popupSubmit">
                               </div>
                           </div>
                           </div>
@@ -3941,7 +4052,7 @@ padding-left: 5px;
                                     <span class="checkmark"></span>
                                   </label>
                                 </div>
-                                <input type="submit" value="Save" class="cmn-popupSubmit">
+                                <input type="submit" value="Done" class="cmn-popupSubmit">
                               </div>
                           </div>
                           </div>
@@ -4464,7 +4575,7 @@ padding-left: 5px;
                                     <span class="checkmark"></span>
                                   </label> -->
                                 </div>
-                                <input type="submit" value="Save" class="cmn-popupSubmit">
+                                <input type="submit" value="Done" class="cmn-popupSubmit">
                               </div>
                           </div>
                           </div>
@@ -7224,19 +7335,76 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
             <div class="resp-tabs-container">
               <div>
                 <div class="ttd-slider-one-main-sec">
-                  <div class="stay_map_slider">
+                  <div class="stay_map_slider cardzz">
                     <div class="stay_map_info">
                       <div class="stay_wrap">
-                        <figure>
+                        <!-- <figure>
                           <img src="assets/images/stay-img.png" alt="" />
-                        </figure>
+                        </figure> -->
                         <div class="stay_txt">
-                          <!-- <ul class="deal_price">
-                            <li><span class="stay_deal">Deal</span></li>
-                            <li><p class="price">$130</p></li>
-                          </ul> -->
-                          <h4>Holiday Inn Paris - Gare de L’Estates,…</h4>
-                          <h5>4.3 (665 Excellent location)</h5>
+                          
+                          <h4><span><img src="./assets/images/v1.svg" alt=""></span> Four Seasons Hotel George V Paris</h4>
+                          <h5>Visit the hotel website for property images, location, amenities, room prices, ratings, guest reviews, etc. </h5>
+                          
+                        </div>
+                        <div class="heart-slide">
+                          <div class="hrt-plus-icn-ttd-img zzz-heart">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="stay_map_info">
+                      <div class="stay_wrap">
+                        <!-- <figure>
+                          <img src="assets/images/stay-img.png" alt="" />
+                        </figure> -->
+                        <div class="stay_txt">
+                          
+                          <h4><span><img src="./assets/images/v1.svg" alt=""></span> Four Seasons Hotel George V Paris</h4>
+                          <h5>Visit the hotel website for property images, location, amenities, room prices, ratings, guest reviews, etc. </h5>
+                          
+                        </div>
+                        <div class="heart-slide">
+                          <div class="hrt-plus-icn-ttd-img zzz-heart">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="stay_map_info">
+                      <div class="stay_wrap">
+                        <!-- <figure>
+                          <img src="assets/images/stay-img.png" alt="" />
+                        </figure> -->
+                        <div class="stay_txt">
+                          
+                          <h4><span><img src="./assets/images/v1.svg" alt=""></span> Four Seasons Hotel George V Paris</h4>
+                          <h5>Visit the hotel website for property images, location, amenities, room prices, ratings, guest reviews, etc. </h5>
+                          
+                        </div>
+                        <div class="heart-slide">
+                          <div class="hrt-plus-icn-ttd-img zzz-heart">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="stay_map_info">
+                      <div class="stay_wrap">
+                        <!-- <figure>
+                          <img src="assets/images/stay-img.png" alt="" />
+                        </figure> -->
+                        <div class="stay_txt">
+                          
+                          <h4><span><img src="./assets/images/v1.svg" alt=""></span> Four Seasons Hotel George V Paris</h4>
+                          <h5>Visit the hotel website for property images, location, amenities, room prices, ratings, guest reviews, etc. </h5>
                           
                         </div>
                         <div class="heart-slide">
@@ -7250,39 +7418,13 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                     </div>
                     <div class="stay_map_info">
                       <div class="stay_wrap">
-                        <figure>
+                        <!-- <figure>
                           <img src="assets/images/stay-img.png" alt="" />
-                        </figure>
+                        </figure> -->
                         <div class="stay_txt">
-                          <!-- <ul class="deal_price">
-                            <li><span class="stay_deal">Deal</span></li>
-                            <li><p class="price">$130</p></li>
-                          </ul> -->
-                          <h4>Holiday Inn Paris - Gare de L’Estates,…</h4>
-                          <h5>4.3 (665 Excellent location)</h5>
-                         
-                        </div>
-                        <div class="heart-slide">
-                          <div class="hrt-plus-icn-ttd-img zzz-heart">
-                                  <div class="hrt-ttd-icn-img">
-                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
-                                  </div>
-                                </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="stay_map_info">
-                      <div class="stay_wrap">
-                        <figure>
-                          <img src="assets/images/stay-img.png" alt="" />
-                        </figure>
-                        <div class="stay_txt">
-                          <!-- <ul class="deal_price">
-                            <li><span class="stay_deal">Deal</span></li>
-                            <li><p class="price">$130</p></li>
-                          </ul> -->
-                          <h4>Holiday Inn Paris - Gare de L’Estates,…</h4>
-                          <h5>4.3 (665 Excellent location)</h5>
+                          
+                          <h4><span><img src="./assets/images/v1.svg" alt=""></span> Four Seasons Hotel George V Paris</h4>
+                          <h5>Visit the hotel website for property images, location, amenities, room prices, ratings, guest reviews, etc. </h5>
                           
                         </div>
                         <div class="heart-slide">
@@ -7296,17 +7438,14 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                     </div>
                     <div class="stay_map_info">
                       <div class="stay_wrap">
-                        <figure>
+                        <!-- <figure>
                           <img src="assets/images/stay-img.png" alt="" />
-                        </figure>
+                        </figure> -->
                         <div class="stay_txt">
-                          <!-- <ul class="deal_price">
-                            <li><span class="stay_deal">Deal</span></li>
-                            <li><p class="price">$130</p></li>
-                          </ul> -->
-                          <h4>Holiday Inn Paris - Gare de L’Estates,…</h4>
-                          <h5>4.3 (665 Excellent location)</h5>
-                         
+                          
+                          <h4><span><img src="./assets/images/v1.svg" alt=""></span> Four Seasons Hotel George V Paris</h4>
+                          <h5>Visit the hotel website for property images, location, amenities, room prices, ratings, guest reviews, etc. </h5>
+                          
                         </div>
                         <div class="heart-slide">
                           <div class="hrt-plus-icn-ttd-img zzz-heart">
@@ -7343,69 +7482,56 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
               </div>
               <div>
                 <div class="dscvr-knw-best-time-tab-info">
-                  <div class="bst-tm-dcvr-ttls">
-                    <h4 class="purplr_txt ">Best Time to Visit</h4>
-                    <p>
-                      The best time to visit France largely depends on your preferences for weather, budget, events and crowd levels. Also, it depends on your personal preferences and what you want to experience during your trip. Here's a breakdown of the different seasons:
-                       <br />
-                      <br />
-                    </p>
+                <div class="bst-tm-dcvr-ttls">
+  <h4 class="purplr_txt ">Best Time to Visit</h4>
+  <p>
+    The best time to visit France largely depends on your preferences for weather, budget, events and crowd levels. Also, it depends on your personal preferences and what you want to experience during your trip. Here's a breakdown of the different seasons:
+    <br />
+    <br />
+  </p>
 
-                    <div class="travel-para">
-                      <span
-                        ><img
-                          class="right-arrow"
-                          src="./assets/images/icons8-right-arrow.png"
-                          alt=""
-                      /></span>
-                      <p>
-                        <strong>Spring (March to May):</strong>
-Spring is a popular time to visit Paris. The weather is mild, and the city's parks and gardens, such as the Luxembourg Gardens and Tuileries Garden, come to life with blooming flowers. It's a great time for sightseeing, and you can also experience events like the Paris Marathon and various cultural festivals.                          <br />
-                      </p>
-                    </div>
-                    <div class="travel-para">
-                      <span
-                        ><img
-                          class="right-arrow"
-                          src="./assets/images/icons8-right-arrow.png"
-                          alt=""
-                      /></span>
-                      <p>
-                        <strong>Summer (June to August):</strong> 
-Summer is peak tourist season in Paris, with warm temperatures and longer days. This is the time when many visitors flock to the city, so attractions can be more crowded. Outdoor activities, such as picnics along the Seine or outdoor concerts, are popular during this period.                        <br />
-                      </p>
-                    </div>
-                    <div class="travel-para">
-                      <span
-                        ><img
-                          class="right-arrow"
-                          src="./assets/images/icons8-right-arrow.png"
-                          alt=""
-                      /></span>
-                      <p>
-                        <strong>Fall (September to November):</strong> 
-Fall offers pleasant weather and fewer crowds compared to summer. The autumn foliage adds a charming touch to the city's scenery. It's a great time to explore museums, galleries, and historical sites without the summer crowds.                         <br />
-                      </p>
-                    </div>
-                    <div class="travel-para">
-                      <span
-                        ><img
-                          class="right-arrow"
-                          src="./assets/images/icons8-right-arrow.png"
-                          alt=""
-                      /></span>
-                      <p>
-                        <strong>Winter (December to February):</strong> 
-Winter in Paris can be cold, with occasional rain and occasional snow. However, the holiday season brings a magical atmosphere with festive decorations, Christmas markets, and ice-skating rinks. Museums and indoor attractions are a good option during this time.                        <br />
-                      </p>
-                    </div>
-                  </div>
+  <div class="travel-para">
+    <span><img class="right-arrow" src="./assets/images/icons8-right-arrow.png" alt="" /></span>
+    <p>
+      <strong>Spring (March to May):</strong>
+      Spring is a popular time to visit Paris. The weather is mild, and the city's parks and gardens, such as the Luxembourg Gardens and Tuileries Garden, come to life with blooming flowers. It's a great time for sightseeing, and you can also experience events like the Paris Marathon and various cultural festivals. <br />
+    </p>
+  </div>
+  <div class="travel-para padd-bttm-tp">
+    <span><img class="right-arrow" src="./assets/images/icons8-right-arrow.png" alt="" /></span>
+    <p>
+      <strong>Summer (June to August):</strong>
+      Summer is peak tourist season in Paris, with warm temperatures and longer days. This is the time when many visitors flock to the city, so attractions can be more crowded. Outdoor activities, such as picnics along the Seine or outdoor concerts, are popular during this period. <br />
+    </p>
+  </div>
+  <div class="travel-para hide-below-548">
+    <span><img class="right-arrow" src="./assets/images/icons8-right-arrow.png" alt="" /></span>
+    <p>
+      <strong>Fall (September to November):</strong>
+      Fall offers pleasant weather and fewer crowds compared to summer. The autumn foliage adds a charming touch to the city's scenery. It's a great time to explore museums, galleries, and historical sites without the summer crowds. <br />
+    </p>
+  </div>
+  <div class="travel-para hide-below-548">
+    <span><img class="right-arrow" src="./assets/images/icons8-right-arrow.png" alt="" /></span>
+    <p>
+      <strong>Winter (December to February):</strong>
+      Winter in Paris can be cold, with occasional rain and occasional snow. However, the holiday season brings a magical atmosphere with festive decorations, Christmas markets, and ice-skating rinks. Museums and indoor attractions are a good option during this time. <br />
+    </p>
+  </div>
+
+  <!-- load-load -->
+  <div class="loadMore-wrap">
+    <a href="javascript:void(0)" id="loadMore">Load More</a>
+  </div>
+</div>
+</div>
+
 
                   <div class="bst-tm-dcvr-tab-chckbx">
                     <h4 class="travel-con-head purplr_txt">
                       Travel Considerations
                     </h4>
-                    <div class="single-check-bx-bst-tm">
+                   <div class="single-check-bx-bst-tm">
                       <div class="innr-chckbx-bst-tm-dcvr">
                         <input type="checkbox" name="mnth" />
                         <div class="chck-itm-bst-tm-dcvr-bst">
@@ -7667,7 +7793,12 @@ Winter in Paris can be cold, with occasional rain and occasional snow. However, 
                           </div>
                         </div>
                       </div>
-                    </div>
+
+                      <!-- load-load-2 -->
+                      <!-- <div class="loadMore-wrap2">
+    <a href="javascript:void(0)" id="loadMore2">Load More</a>
+  </div>
+                    </div>  -->
                     <!-- testing-code -->
                     <main class="home-page">
                       <!-- hot deals section for dashboard -->
@@ -8059,10 +8190,12 @@ Paris is beautifully adorned with Christmas lights, particularly along the Champ
                   </p>
                 </div>
 
-                    <!-- <div class="loadMore-wrap">
+                    <div class="loadMore-wrap">
                       <a href="javascript:void(0)" id="loadMore">Load More</a>
-                    </div> -->
+                    </div>
                   </div>
+
+
                 </div>
               </div>
               <div>
@@ -8221,16 +8354,16 @@ Always consider the best mode of transport depending on your destination and the
                     </p>
 
                            <!-- cards-trans -->
-<div class="trvl_dshbrd_sec " style="padding-top: 20px;">
+<div class="trvl_dshbrd_sec cmn-gap" style="padding-top: 20px;">
           <div class="trvl_dshbrd_innr">
             
             <div class="trvl_dshbrd_wrppr">
-              <div style="margin-right: 0;" class="row trvl_dshbrd_row">
+              <div  class="row trvl_dshbrd_row">
                 <div class="col-md-6 pb-md-4 col-lg-4 pb-lg-0 trvl_dshbrd_lftCol">
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                         <span><img style="width: 32px" src="./assets/icons/globe_7178409.png" alt=""></span>
+                         <span><img style="width: 32px" src="./assets/images/v3.svg" alt=""></span>
                         <h3 >
 Train à Grande Vitesse
                         </h3>
@@ -8247,7 +8380,7 @@ Train à Grande Vitesse
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                        <span><img style="width: 32px" src="./assets/icons/clock_15945170.png" alt=""></span>
+                        <span><img style="width: 32px" src="./assets/images/v3.svg" alt=""></span>
                         <h3 >
 Regional Trains
                         </h3>
@@ -8264,7 +8397,7 @@ Regional Trains
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                        <span><img style="width: 32px" src="./assets/icons/clipboard_1734218.png" alt=""></span>
+                        <span><img style="width: 32px" src="./assets/images/v6.svg" alt=""></span>
                         <h3 >
                           Métro and Bus
                         </h3>
@@ -8303,7 +8436,7 @@ Regional Trains
           <div class="trvl_dshbrd_innr">
             
             <div class="trvl_dshbrd_wrppr">
-              <div style="margin-right: 0;" class="row trvl_dshbrd_row">
+              <div  class="row trvl_dshbrd_row">
                 <div class="col-md-6 pb-md-4 col-lg-4 pb-lg-0 trvl_dshbrd_lftCol">
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
@@ -8342,7 +8475,7 @@ Regional Trains
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                        <span><img style="width: 32px" src="./assets/icons/clipboard_1734218.png" alt=""></span>
+                        <span><img style="width: 32px" src="./assets/images/v4.svg" alt=""></span>
                         <h3>
                           Car Rental
                         </h3>
@@ -8383,7 +8516,7 @@ Regional Trains
           <div class="trvl_dshbrd_innr">
             
             <div class="trvl_dshbrd_wrppr">
-              <div style="margin-right: 0;" class="row trvl_dshbrd_row">
+              <div  class="row trvl_dshbrd_row">
                 <div class="col-md-6 pb-md-4 col-lg-4 pb-lg-0 trvl_dshbrd_lftCol">
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
@@ -8405,7 +8538,7 @@ Regional Trains
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                        <span><img style="width: 32px" src="./assets/icons/clock_15945170.png" alt=""></span>
+                        <span><img style="width: 32px" src="./assets/images/v5.svg" alt=""></span>
                         <h3>
                           Boats and Ferries
                         </h3>
@@ -8687,23 +8820,28 @@ Regional Trains
     </footer>
     <!--footer ends here-->
 
-     <div class="bottom-fixt-mne-all-pgs">
+    <div class="bottom-fixt-mne-all-pgs">
       <div class="container">
         <ul>
           <li>
             <a href="dashboard.html"
-              ><img src="assets/images/home_hover.svg" alt=""
-            /></a>
+              ><img src="assets/images/home_hover.svg" alt="" />
+              <p>Home</p>
+            </a>
           </li>
 
           <li>
             <a href="#" class="discvr"
-              ><img src="assets/images/discover_hover.svg" alt=""
-            /></a>
+              ><img src="assets/images/discover_hover.svg" alt="" />
+              <p>Discover</p>
+            </a>
           </li>
 
           <li>
-            <a href="#"><img src="assets/icons/love_8647296.png" alt="" /></a>
+            <a href="#"
+              ><img src="assets/icons/love_8647296.png" alt="" />
+              <p>Saved</p></a
+            >
           </li>
         </ul>
       </div>
@@ -18322,12 +18460,32 @@ $('.stay_map_slider').slick({
     {
       breakpoint: 480, // Adjust settings for screens smaller than 480px
       settings: {
-        slidesToShow: 1, // Show 1 slide at a time
-        slidesToScroll: 1 // Scroll 1 slide at a time
+        slidesToShow: 6, // Show 1 slide at a time
+        slidesToScroll: 1 ,// Scroll 1 slide at a time
+        vertical: true
       }
     }
   ]
 });
     </script>
+
+    <script>
+const loadMoreLink = document.getElementById('loadMore');
+const paragraphs = document.querySelectorAll('.hide-below-548');
+
+function toggleParagraphs() {
+  paragraphs.forEach(paragraph => paragraph.classList.toggle('show'));
+
+  if (loadMoreLink.textContent === 'Load More') {
+    loadMoreLink.textContent = 'Show Less';
+  } else {
+    loadMoreLink.textContent = 'Load More';
+  }
+}
+
+loadMoreLink.addEventListener('click', toggleParagraphs);
+    </script>
+
+  
   </body>
 </html>

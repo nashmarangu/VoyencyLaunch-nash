@@ -191,7 +191,7 @@
         display: none;
       }
       .trvl_insrt_box {
-        min-height: 276px !important;
+        min-height: 320px !important;
         padding: 25px 20px 25px;
       }
       .trvl_insrt_box p {
@@ -220,7 +220,7 @@
         padding-top: 12px;
       }
       .hot_deals_dahsboard.cmn-gap {
-        padding-bottom: 40px !important;
+        padding-bottom: 1px !important;
       }
       .usr_dropdwn .dropdown ul {
         width: 258px;
@@ -275,6 +275,7 @@
         flex-wrap: wrap;
         align-items: baseline;
         margin: 0 -8.5px -15px;
+        padding-right: 8px;
       }
       .discvr-knw-inner-tab-part .resp-tabs-list li {
         font-size: 22px;
@@ -361,7 +362,7 @@
       }
       .text-top {
         font-size: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
       }
       .dscvr-knw-whr-stay-tp-ttl h4 {
         font-size: 35px;
@@ -377,7 +378,7 @@
       }
       .rght-img-mn-dscvr-knw-tb-dtls p {
         max-width: unset !important;
-        font-size: 20px;
+        font-size: 22px;
       }
       .discover-btn a {
         text-decoration: none;
@@ -403,12 +404,12 @@
       }
       .travel-para {
         display: flex;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
       .travel-con-head {
         font-weight: 300;
         font-size: 25px;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
       }
       .travel-readns-dcvr-tab-info h4 {
         font-size: 35px;
@@ -423,7 +424,7 @@
 
 .common-popup {
     padding: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
 }
 .modal-backdrop {
     position: fixed;
@@ -499,6 +500,7 @@ font-size: 14px !important;   }
 .travel-readns-dcvr-tab-inr-tab #ChildVerticalTab_2 .resp-tabs-list li {
    font-size: 18px !important;
     padding: 2px 12px !important;
+    font-weight: 400;
 }
 .trvl_hdng_row{
     margin: 0;
@@ -553,6 +555,7 @@ font-size: 14px !important;   }
         .travel-readns-dcvr-tab-inr-tab #ChildVerticalTab_2 .resp-tabs-list li {
     font-size: 14px !important;
     padding: 2px 12px !important;
+    font-weight: 400;
 }
       }
       
@@ -574,7 +577,7 @@ font-size: 14px !important;   }
     -webkit-transition: 0s none;
 }
 .hotDeals-slider .item:hover {
-    transform: none !important;
+    /* transform: none !important; */
 }
 
 }
@@ -616,7 +619,7 @@ font-size: 14px !important;   }
     }
 }
 .top_beach_sttnd{
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 @media only screen and (max-width: 568px){
   .top_beach_sttnd{
@@ -624,7 +627,7 @@ font-size: 14px !important;   }
 }
 }
 .paris-evt{
-  padding-top: 70px ;
+  padding-top: 60px ;
 }
 .rght-img-mn-dscvr-knw-tb-dtls h4 {
     font-size: 25px;
@@ -721,7 +724,7 @@ font-size: 14px !important;   }
 .dscvr-knw-whr-stay-sec {
     position: relative;
     margin-bottom: 60px;
-    padding-top: 10px;
+    padding-top: 31px;
 }
 .srch_drpDwn{
   top: -390px;
@@ -758,7 +761,6 @@ font-size: 14px !important;   }
 #popupCommonTab12-2 > div.cmn-popupSubmit-wrap.popupCommon-margin.cmn-popupSubmit-wrap-withCheckBox > div{
       cursor: pointer;
     margin-bottom: 0;
-    margin-top: -80px;
     margin-left: 3px;
 
 }
@@ -826,11 +828,88 @@ padding-left: 5px;
 .common-popup .modal-content .btn-close {
     position: absolute;
     right: 20px;
-    top: -90px;
+    top: -30px;
     box-shadow: none;
     outline: none;
     opacity: 1;
 }
+.fixt-top-headr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+}
+}
+@media (max-width: 1699px) {
+    .banner_pg_innner .main_img img {
+        height: 443px;
+        object-fit: cover;
+    }
+}
+.last-dcvr-tab-tvl-innr-details {
+padding-top: 20px;
+}
+.added-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.close-icon img{
+  width: 12px;
+  cursor: pointer;
+}
+.note-height::placeholder{
+  padding: 10px;
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+
+}
+.note-height{
+  padding: 10px;
+}
+.add-other{
+  display: none;
+}
+.thankyou-wrap{
+  justify-content: center;
+}
+.thank-you h2{
+text-align: center;
+padding-bottom: 20px;
+}
+.thank-you p{
+  text-align: center;
+}
+   .bottom-fixt-mne-all-pgs ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom-fixt-mne-all-pgs ul li a p {
+        color: #000000;
+        font-size: 14px;
+      }
+      @media (max-width: 992px){ 
+        .right-arrow{
+        width: unset;
+      }}
+     .padd-bttm-tp {
+      padding-bottom: 30px !important;
+     }
+         @media (max-width: 440px){
+   .right-arrow {
+    width: 130px;
+}
+}
+.trvl_hdng_lft span img{
+  height: 32px;
+}
+@media (max-width: 500px) {
+    .banner_pg_innner .main_img img {
+        height: 260px;
+        object-fit: cover;
+    }
 }
     </style>
   </head>
@@ -1166,9 +1245,9 @@ padding-left: 5px;
                <ul>
                         <!-- <li><a href="#"><img src="assets/images/bdd1.svg" alt=""></a></li>
                         <li><a href="#"><img src="assets/images/bdd11.svg" alt=""></a></li>-->
-                        <li><a href="#" class="travelBuddy-btn" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmfiveToItinerary"><img src="assets/images/add_photo.svg" alt=""></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmoneToItinerary">  <img src="assets/images/map.svg" alt=""></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmtwoToItinerary"><img src="assets/images/feedback.svg" alt=""></a></li>
+                        <li><a href="#" class="travelBuddy-btn" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmfiveToItinerary"><span><i class="fa-sharp fa-regular fa-images fa-fw" style="color: #653d93;"></i></span></a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmoneToItinerary"> <span><i class="fa-sharp fa-regular fa-map-location-dot fa-fw" style="color: #653d93;"></i></span> </a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmtwoToItinerary"><span><i class="fa-sharp fa-regular fa-message-lines fa-fw" style="color: #653d93;"></i></span></a></li>
                         <!-- <li><a href="#"><img src="assets/images/date_range.svg" alt=""></a></li>  -->
 
                       </ul>
@@ -2894,7 +2973,7 @@ padding-left: 5px;
     aria-hidden="true"
   >
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+      <div class="modal-content thankyou-wrap">
         <button
           type="button"
           class="btn-close"
@@ -2906,188 +2985,21 @@ padding-left: 5px;
           
           
           <div id="popupCommonTab4" class="commonFilter-tabs commonPopup-tabs">
-                          <div class="commonPopup-tabs-head popupCommon-margin">
-                             <ul>
-                            <!-- <li><a href="#popupCommonTab4-1">Find Reservation</a></li> -->
-                            <li><a href="#popupCommonTab4-2">Manual Entry</a></li>
-                            
-                          </ul>
-                            <!-- <a href="flights.html" target="_blank" rel="noopener noreferrer" class="commonPopup-tabs-singleLink">Search</a> -->
-                          </div>
                          
-                          <!-- <div
-                            class="all-ftr-alt-cty-arw-bar"
-                            id="popupCommonTab4-1"
-                          >
-                            <div class="popupCommon-step1">
-                              <div class="cmn-popupInputWithIcon-wrap">
-            <i><img src="assets/images/popup-profile.svg" alt=""></i>
-            <input type="text" placeholder="Confirmation Number" class=" cmn-popupInputWithIcon">
-            
-                              </div>
-                              <div class="cmn-popupSubmit-wrap popupCommon-margin">
-                                <input type="submit" value="Search" class="cmn-popupSubmit">
-                              </div>
-                            </div>
-                            <div class="popupCommon-step2">
-                              <div class="cmn-popupInputWithIcon-wrap popupCommon-margin">
-                                <i><img src="assets/images/v1.svg" alt=""></i>
-                                <input type="text" placeholder="Activity Name" class=" cmn-popupInputWithIcon" spellcheck="false" data-ms-editor="true">
-                                
-                              </div>
-
-                              <div class="cmn-popupInputWithIcon-wrap popupCommon-margin">
-                                <i><img src="assets/images/location.svg" alt=""></i>
-                                <input type="text" placeholder="Address" class=" cmn-popupInputWithIcon" spellcheck="false" data-ms-editor="true">
-                                
-                              </div>
-
-                              <div class="cmn-popupDate-wrap popupCommon-margin">
-                                <div class="cmn-popupDate">
-                                  <i><img src="assets/images/popup-calendarIcon.svg" alt=""></i>
-                                  <input type="text" placeholder="Start Date" class="cusDate-picker" autocomplete="off" spellcheck="false" data-ms-editor="true">
-                                </div>
-                                <div class="cmn-popupDate">
-                                  <i><img src="assets/images/popup-calendarIcon.svg" alt=""></i>
-                                  <input type="text" placeholder="Start Time" class="cusDate-picker" spellcheck="false" data-ms-editor="true">
-                                </div>
-                              </div>
-                              <div class="cmn-popupDate-wrap popupCommon-margin">
-                                <div class="cmn-popupDate">
-                                                <i><img src="assets/images/popup-calendarIcon.svg" alt=""></i>
-                                                <input type="text" placeholder="End Date" class="cusDate-picker" autocomplete="off" spellcheck="false" data-ms-editor="true">
-                                              </div>
-                                              <div class="cmn-popupDate">
-                                                <i><img src="assets/images/popup-calendarIcon.svg" alt=""></i>
-                                                <input type="text" placeholder="End Time" class="cusDate-picker" spellcheck="false" data-ms-editor="true">
-                                              </div>
-                              </div>
-                              <div class="cmn-popupSubmit-wrap popupCommon-margin cmn-popupSubmit-wrap-withCheckBox">
-                                <div class="singl-all-fltr-chckbx">
-                                  <label class="check-inn">
-                                    <span class="all-fltr-chckbx-itm">Booked </span>
-                                    <input type="checkbox" class="open">
-                                    <span class="checkmark"></span>
-                                  </label>
-                                </div>
-                                <input type="submit" value="Search" class="cmn-popupSubmit">
-                              </div>
-          
-                            </div>
-                            </div> -->
+                         
+                          
                             <div
                             class="all-ftr-alt-cty-arw-bar"
                             id="popupCommonTab4-2"
                           >
+                          <!-- thank you popup -->
+                          <div class="thank-you">
+                            <h2 class="purplr_txt">Thank you!</h2>
+                            <p style="color: gray;">Your photo has been submitted. It will be published after review.</p>
+                          </div>
+
               
 
-                          <div class="cmn-popupDate-wrap popupCommon-margin">
-                            <div class="cmn-popupDate">
-                              <i><img src="assets/images/company-name-nww22.svg" alt=""></i>
-                              <input type="text" placeholder="Company Name" class="cusDate-picker" autocomplete="off" spellcheck="false" data-ms-editor="true">
-                            </div>
-                            <div class="cmn-popupDate">
-                              <i><img src="assets/images/v3.svg" alt=""></i>
-                              <input type="text" placeholder="Train Line" class="cusDate-picker" spellcheck="false" data-ms-editor="true">
-                            </div>
-                          </div>
-                          <div class="cmn-popupDate-wrap popupCommon-margin">
-                            <div class="cmn-popupDate">
-                                            <i><img src="assets/images/location.svg" alt=""></i>
-                                            <input type="text" placeholder="Departure Station" class="cusDate-picker" autocomplete="off" spellcheck="false" data-ms-editor="true">
-                                          </div>
-                                          <div class="cmn-popupDate">
-                                            <i><img src="assets/images/location.svg" alt=""></i>
-                                            <input type="text" placeholder="Arrival Station" class="cusDate-picker" spellcheck="false" data-ms-editor="true">
-                                          </div>
-                          </div>
-                          <div class="cmn-popupDate-wrap popupCommon-margin">
-                            <div class="cmn-popupDate">
-                              <i><img src="assets/images/popup-calendarIcon-purple.svg" alt=""></i>
-                              <input type="text" placeholder="Departure Date" class="cusDate-picker" autocomplete="off" spellcheck="false" data-ms-editor="true">
-                            </div>
-                            <div class="cmn-popupDate">
-                              <i><img src="assets/images/popup-calendarIcon-purple.svg" alt=""></i>
-                              <input type="text" placeholder="Arrival Date" class="cusDate-picker" spellcheck="false" data-ms-editor="true">
-                            </div>
-                          </div>
-                          <div class="cmn-popupDate-wrap popupCommon-margin">
-                                          <div class="upcmn-trp-nw-popup-fr-lst-tim cmn-popupDate">
-                                            <div class="trip_details_slect">
-                                              <i><img src="assets/images/popup-clock.svg" alt=""></i>
-                                                 
-                                              <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSortButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                  <!-- <i class="iccn"
-                                                      ><img src="assets/images/trp_img1.png" alt=""
-                                                    /></i> -->
-                                                  <label class="drop_mn_tg">Departure Time</label>
-                                                </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownSortButton1">
-                                                  <li>
-                                                    <a class="dropdown-item">1</a>
-                                                  </li>
-                                                  <li>
-                                                    <a class="dropdown-item">2</a>
-                                                  </li>
-                                                  <li>
-                                                    <a class="dropdown-item">3</a>
-                                                  </li>
-                                                  <li>
-                                                    <a class="dropdown-item">4</a>
-                                                  </li>
-                                                </ul>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="upcmn-trp-nw-popup-fr-lst-tim cmn-popupDate">
-                                            <div class="trip_details_slect">
-                                              <i><img src="assets/images/popup-clock.svg" alt=""></i>
-                                                 
-                                              <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSortButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                  <!-- <i class="iccn"
-                                                      ><img src="assets/images/trp_img1.png" alt=""
-                                                    /></i> -->
-                                                  <label class="drop_mn_tg">Arrival Time</label>
-                                                </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownSortButton1">
-                                                  <li>
-                                                    <a class="dropdown-item">1</a>
-                                                  </li>
-                                                  <li>
-                                                    <a class="dropdown-item">2</a>
-                                                  </li>
-                                                  <li>
-                                                    <a class="dropdown-item">3</a>
-                                                  </li>
-                                                  <li>
-                                                    <a class="dropdown-item">4</a>
-                                                  </li>
-                                                </ul>
-                                              </div>
-                                            </div>
-                                          </div>
-                          </div>
-                          <div class="cmn-popupDate-wrap popupCommon-margin">
-                            <div class="cmn-popupDate">
-                                            <i><img src="assets/images/confrmation-nw-icn22.svg" alt=""></i>
-                                            <input type="text" placeholder="Confirmation Number" class="cusDate-picker" autocomplete="off" spellcheck="false" data-ms-editor="true">
-                                          </div>
-                          </div>
-
-
-                              
-                              <div class="cmn-popupSubmit-wrap popupCommon-margin cmn-popupSubmit-wrap-withCheckBox">
-                                <div class="singl-all-fltr-chckbx">
-                                  <label class="check-inn">
-                                    <span class="all-fltr-chckbx-itm">Booked </span>
-                                    <input type="checkbox" class="open">
-                                    <span class="checkmark"></span>
-                                  </label>
-                                </div>
-                                <input type="submit" value="Save" class="cmn-popupSubmit">
-                              </div>
                           </div>
                           </div>
                           
@@ -3832,7 +3744,7 @@ padding-left: 5px;
                             id="popupCommonTab8-2"
                           >
               <!-- aaaaaaaa -->
-              <div class="upcmn-trp-nw-popup-fr-lst-tim cmn-popupDate mb-popup">
+              <div class="upcmn-trp-nw-popup-fr-lst-tim cmn-popupDate mb-popup other-disappear">
                                             <div class="trip_details_slect">
                                               <i><img src="assets/images/location.svg" alt=""></i>
                                                  
@@ -3854,12 +3766,20 @@ padding-left: 5px;
                                                     <a class="dropdown-item">3</a>
                                                   </li>
                                                   <li>
-                                                    <a class="dropdown-item">4</a>
+                                                    <a class="dropdown-item other-dropdown">Other</a>
                                                   </li>
                                                 </ul>
                                               </div>
                                             </div>
                                           </div>
+
+                                          <!-- add-other -->
+                                           <div class="add-other cmn-popupInputWithIcon-wrap popupCommon-margin">
+                            <i><img src="assets/images/location.svg" alt=""></i>
+                            <input type="text" placeholder="Add Administrative Type" class=" cmn-popupInputWithIcon" spellcheck="false" data-ms-editor="true">
+                            
+                          </div>
+                                          <!-- end-other -->
 
                           <div class="cmn-popupInputWithIcon-wrap popupCommon-margin">
                             <i><img src="assets/images/location.svg" alt=""></i>
@@ -3889,7 +3809,7 @@ padding-left: 5px;
                                     <span class="checkmark"></span>
                                   </label>
                                 </div>
-                                <input type="submit" value="Save" class="cmn-popupSubmit">
+                                <input type="submit" value="Done" class="cmn-popupSubmit">
                               </div>
                           </div>
                           </div>
@@ -4015,7 +3935,7 @@ padding-left: 5px;
                                     <span class="checkmark"></span>
                                   </label>
                                 </div>
-                                <input type="submit" value="Save" class="cmn-popupSubmit">
+                                <input type="submit" value="Done" class="cmn-popupSubmit">
                               </div>
                           </div>
                           </div>
@@ -4364,7 +4284,7 @@ padding-left: 5px;
     aria-hidden="true"
   >
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+      <div class="modal-content ">
         <button
           type="button"
           class="btn-close"
@@ -4528,8 +4448,31 @@ padding-left: 5px;
                           <!-- endnashnash -->
 
 
+
+                           <!-- image-btn -->
+                                <div class="added-btns">
+                                  <div class="added-btn">
+                                    <p>Eiffel Tower 1.png</p>
+                                    <div class="close-icon"><img src="./assets/icons/x-solid.svg" alt=""></div>
+                                  </div>
+
+
+                                </div>
+                                  <div class="added-btns">
+                                  <div class="added-btn">
+                                    <p>Eiffel Tower 1.png</p>
+                                    <div class="close-icon"><img src="./assets/icons/x-solid.svg" alt=""></div>
+                                  </div>
+
+
+                                </div>
+                          
+                                <!-- endimagebutton -->
                               
                               <div class="cmn-popupSubmit-wrap popupCommon-margin cmn-popupSubmit-wrap-withCheckBox">
+
+                               
+
                                 <div class="singl-all-fltr-chckbx">
                                   <p><span><img src="assets/images/pllss11.svg" alt=""></span>Add Photo</p>
                                   <!-- <label class="check-inn">
@@ -4538,7 +4481,7 @@ padding-left: 5px;
                                     <span class="checkmark"></span>
                                   </label> -->
                                 </div>
-                                <input type="submit" value="Save" class="cmn-popupSubmit">
+                                <input type="submit" value="Done" class="cmn-popupSubmit" data-bs-toggle="modal" data-bs-target="#addAddtrainToItinerary">
                               </div>
                           </div>
                           </div>
@@ -7607,7 +7550,7 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                         <strong>Spring (March to May):</strong> Spring is a delightful time to visit France as the weather is mild, flowers are blooming, and crowds are smaller compared to the peak summer months. This is a great time for outdoor activities, exploring gardens, and enjoying outdoor cafes. <br />
                       </p>
                     </div>
-                    <div class="travel-para">
+                    <div class="travel-para padd-bttm-tp">
                       <span
                         ><img
                           class="right-arrow"
@@ -8513,16 +8456,16 @@ Always consider the best mode of transport depending on your destination and the
                     </p>
 
                     <!-- cards-trans -->
-<div class="trvl_dshbrd_sec " style="padding-top: 20px;">
+<div class="trvl_dshbrd_sec cmn-gap" style="padding-top: 20px;">
           <div class="trvl_dshbrd_innr">
             
             <div class="trvl_dshbrd_wrppr">
-              <div style="margin-right: 0;" class="row trvl_dshbrd_row">
+              <div  class="row trvl_dshbrd_row">
                 <div class="col-md-6 pb-md-4 col-lg-4 pb-lg-0 trvl_dshbrd_lftCol">
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                         <span><img style="width: 32px" src="./assets/icons/globe_7178409.png" alt=""></span>
+                         <span><img style="width: 32px" src="./assets/images/v3.svg" alt=""></span>
                         <h3 >
 Train à Grande Vitesse
                         </h3>
@@ -8539,7 +8482,7 @@ Train à Grande Vitesse
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                        <span><img style="width: 32px" src="./assets/icons/clock_15945170.png" alt=""></span>
+                        <span><img style="width: 32px" src="./assets/images/v3.svg" alt=""></span>
                         <h3 >
 Regional Trains
                         </h3>
@@ -8556,7 +8499,7 @@ Regional Trains
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                        <span><img style="width: 32px" src="./assets/icons/clipboard_1734218.png" alt=""></span>
+                        <span><img style="width: 32px" src="./assets/images/v6.svg" alt=""></span>
                         <h3 >
                           Métro and Bus
                         </h3>
@@ -8595,7 +8538,7 @@ Regional Trains
           <div class="trvl_dshbrd_innr">
             
             <div class="trvl_dshbrd_wrppr">
-              <div style="margin-right: 0;" class="row trvl_dshbrd_row">
+              <div  class="row trvl_dshbrd_row">
                 <div class="col-md-6 pb-md-4 col-lg-4 pb-lg-0 trvl_dshbrd_lftCol">
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
@@ -8634,7 +8577,7 @@ Regional Trains
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                        <span><img style="width: 32px" src="./assets/icons/clipboard_1734218.png" alt=""></span>
+                        <span><img style="width: 32px" src="./assets/images/v4.svg" alt=""></span>
                         <h3>
                           Car Rental
                         </h3>
@@ -8675,7 +8618,7 @@ Regional Trains
           <div class="trvl_dshbrd_innr">
             
             <div class="trvl_dshbrd_wrppr">
-              <div style="margin-right: 0;" class="row trvl_dshbrd_row">
+              <div  class="row trvl_dshbrd_row">
                 <div class="col-md-6 pb-md-4 col-lg-4 pb-lg-0 trvl_dshbrd_lftCol">
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
@@ -8697,7 +8640,7 @@ Regional Trains
                   <div class="trvl_insrt_box">
                     <div class="trvl_hdng_row">
                       <div class="trvl_hdng_lft">
-                        <span><img style="width: 32px" src="./assets/icons/clock_15945170.png" alt=""></span>
+                        <span><img style="width: 32px" src="./assets/images/v5.svg" alt=""></span>
                         <h3>
                           Boats and Ferries
                         </h3>
@@ -8979,23 +8922,28 @@ Regional Trains
     </footer>
     <!--footer ends here-->
 
-     <div class="bottom-fixt-mne-all-pgs">
+    <div class="bottom-fixt-mne-all-pgs">
       <div class="container">
         <ul>
           <li>
             <a href="dashboard.html"
-              ><img src="assets/images/home_hover.svg" alt=""
-            /></a>
+              ><img src="assets/images/home_hover.svg" alt="" />
+              <p>Home</p>
+            </a>
           </li>
 
           <li>
             <a href="#" class="discvr"
-              ><img src="assets/images/discover_hover.svg" alt=""
-            /></a>
+              ><img src="assets/images/discover_hover.svg" alt="" />
+              <p>Discover</p>
+            </a>
           </li>
 
           <li>
-            <a href="#"><img src="assets/icons/love_8647296.png" alt="" /></a>
+            <a href="#"
+              ><img src="assets/icons/love_8647296.png" alt="" />
+              <p>Saved</p></a
+            >
           </li>
         </ul>
       </div>
@@ -18595,5 +18543,30 @@ document.querySelectorAll("#viewLessSpan").forEach(span => {
   span.addEventListener("click", () => toggleText(span.closest(".commonScroll").classList[1]));
 });
     </script>
+    <script>// Get all elements with the class 'close-icon'
+const closeIcons = document.querySelectorAll('.close-icon');
+
+// Loop through each close-icon element
+closeIcons.forEach(closeIcon => {
+  // Get the parent div of the current close-icon
+  const parentDiv = closeIcon.parentElement;
+
+  // Add click event listener to the current close-icon
+  closeIcon.addEventListener('click', () => {
+    // Set the display property of the parent div to 'none'
+    parentDiv.style.display = 'none';
+  });
+});</script>
+<script>
+  // Get the elements
+const otherDropdown = document.querySelector('.other-dropdown');
+const addOther = document.querySelector('.add-other');
+
+// Add an event listener to the 'other-dropdown' class
+otherDropdown.addEventListener('click', function() {
+  // Show the .add-other element
+  addOther.style.display = 'block';
+});
+</script>
   </body>
 </html>

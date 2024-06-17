@@ -222,6 +222,7 @@
     max-width: 100% !important;
     padding: 0 15px !important;
 }
+
       }
       @media (max-width: 768px){
  .purple_map {
@@ -230,6 +231,24 @@
         background-position: center;
       }
       }
+         .bottom-fixt-mne-all-pgs ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom-fixt-mne-all-pgs ul li a p {
+        color: #000000;
+        font-size: 14px;
+      }
+
+   @media (max-width: 568px){
+ .purple_map {
+        height: 260px;
+        padding: 5rem 1rem 6rem;
+      }
+   }
+      
     </style>
     <!-- END-CUSTOM-CSS -->
     
@@ -943,20 +962,28 @@
 </footer>
 <!--footer ends here-->
 
-
-  <div class="bottom-fixt-mne-all-pgs">
+<div class="bottom-fixt-mne-all-pgs">
       <div class="container">
         <ul>
           <li>
-            <a href="dashboard.html"><img src="assets/images/home_hover.svg" alt=""></a>
+            <a href="dashboard.html"
+              ><img src="assets/images/home_hover.svg" alt="" />
+              <p>Home</p>
+            </a>
           </li>
 
           <li>
-            <a href="#" class="discvr"><img src="assets/images/discover_hover.svg" alt=""></a>
+            <a href="#" class="discvr"
+              ><img src="assets/images/discover_hover.svg" alt="" />
+              <p>Discover</p>
+            </a>
           </li>
 
           <li>
-            <a href="#"><img src="assets/icons/love_8647296.png" alt=""></a>
+            <a href="#"
+              ><img src="assets/icons/love_8647296.png" alt="" />
+              <p>Saved</p></a
+            >
           </li>
         </ul>
       </div>

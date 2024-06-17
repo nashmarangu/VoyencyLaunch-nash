@@ -325,7 +325,7 @@ padding: 10px 20px;    }
 }
 .common-popup {
     padding: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
 }
 .modal-backdrop {
     position: fixed;
@@ -369,7 +369,7 @@ padding: 10px 20px;    }
 }
 }
 .dash_cmn_gap{
-  padding: 20px 0 40px !important;
+  padding: 30px 0 40px !important;
 }
 @media (max-width: 1499px) {
     .sec_heading_lft h2 {
@@ -378,7 +378,7 @@ padding: 10px 20px;    }
 }
 @media (max-width: 568px) {
     .banner_pg_innner .main_img img {
-        height: 390px;
+        height: 260px;
     }
         .sec_heading_lft h2 {
         font-size: 25px;
@@ -449,13 +449,48 @@ padding-left: 5px;
 .common-popup .modal-content .btn-close {
     position: absolute;
     right: 20px;
-    top: -90px;
+    top: -30px;
     box-shadow: none;
     outline: none;
     opacity: 1;
 }
+.feedback-btn-done{
+  margin-top: 50px;
 }
+.fixt-top-headr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+}
+}
+.cmn-popupDate {
+    width: 100% !important;
+    flex: 0 0 auto;
+    padding: 0 9px;
+}
+.note-height::placeholder{
+  padding: 10px;
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
 
+}
+   .bottom-fixt-mne-all-pgs ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom-fixt-mne-all-pgs ul li a p {
+        color: #000000;
+        font-size: 14px;
+      }
+      @media only screen and (max-width: 767px) {
+    body.modal-open .bottom-fixt-mne-all-pgs {
+        display: block;
+    }
+}
     </style>
   </head>
 
@@ -2422,7 +2457,7 @@ padding-left: 5px;
                                     <span class="checkmark"></span>
                                   </label>
                                 </div>
-                                <input type="submit" value="Add" class="cmn-popupSubmit">
+                                <input type="submit" value="Done" class="cmn-popupSubmit">
                               </div>
           
                             </div>
@@ -3568,7 +3603,7 @@ padding-left: 5px;
                                     <span class="checkmark"></span>
                                   </label>
                                 </div>
-                                <input type="submit" value="Save" class="cmn-popupSubmit">
+                                <input type="submit" value="Done" class="feedback-btn-done cmn-popupSubmit">
                               </div>
                           </div>
                           </div>
@@ -15297,15 +15332,24 @@ padding-left: 5px;
       <div class="container">
         <ul>
           <li>
-            <a href="dashboard.html"><img src="assets/images/home_hover.svg" alt=""></a>
+            <a href="dashboard.html"
+              ><img src="assets/images/home_hover.svg" alt="" />
+              <p>Home</p>
+            </a>
           </li>
 
           <li>
-            <a href="#" class="discvr"><img src="assets/images/discover_hover.svg" alt=""></a>
+            <a href="#" class="discvr"
+              ><img src="assets/images/discover_hover.svg" alt="" />
+              <p>Discover</p>
+            </a>
           </li>
 
           <li>
-            <a href="#"><img src="assets/icons/love_8647296.png" alt=""></a>
+            <a href="#"
+              ><img src="assets/icons/love_8647296.png" alt="" />
+              <p>Saved</p></a
+            >
           </li>
         </ul>
       </div>
