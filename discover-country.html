@@ -404,7 +404,7 @@
       }
       .travel-para {
         display: flex;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
       }
       .travel-con-head {
         font-weight: 300;
@@ -770,6 +770,7 @@ font-size: 14px !important;   }
     display: flex;
     gap: 10px;
     align-items: center;
+    font-weight: bold; 
 }
 .mb-popup{
   margin-bottom: 20px;
@@ -827,8 +828,8 @@ padding-left: 5px;
 }
 .common-popup .modal-content .btn-close {
     position: absolute;
-    right: 20px;
-    top: -30px;
+    right: 0px;
+    top: -160px;
     box-shadow: none;
     outline: none;
     opacity: 1;
@@ -838,7 +839,7 @@ padding-left: 5px;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999999;
+    z-index: 110;
 }
 }
 @media (max-width: 1699px) {
@@ -895,7 +896,7 @@ padding-bottom: 20px;
         width: unset;
       }}
      .padd-bttm-tp {
-      padding-bottom: 30px !important;
+      padding-bottom: 20px !important;
      }
          @media (max-width: 440px){
    .right-arrow {
@@ -910,8 +911,54 @@ padding-bottom: 20px;
         height: 260px;
         object-fit: cover;
     }
+    .know-more{
+      padding-top: 20px;
+    }
+}
+.hvr-dv-box-upcmng ul li a span i{
+  font-size: 1.5rem;
+}
+.parentHorizontalTabComtitent_wpr .resp-tabs-list li span{
+  font-weight: 400;
+}
+.cmn-gap22{
+  padding-bottom: 40px;
+}
+.best-pad-bttm{
+  padding-bottom: 20px;
+}
+.discvr-knw-inner-tab-part .resp-tabs-list {
+    padding-bottom: 20px !important;
+}
+
+@media (max-width: 479px) {
+    .cmn-popupBox {
+        padding: 0px 0;
+        padding-top: 0px;
+    }
+}
+@media (max-width: 568px){
+.btn2-close-mb{
+        position: absolute;
+        right: 0px !important;
+        top: -80px !important;
+        box-shadow: none;
+        outline: none;
+        opacity: 1;
+}
+.custom-clse-btn{
+  position: absolute;
+        right: 0px;
+        top: -140px !important;
+        box-shadow: none;
+        outline: none;
+        opacity: 1;
+}
 }
     </style>
+    
+            <!-- Place your kit's code here -->
+            <script src="https://kit.fontawesome.com/3bb618cb3a.js" crossorigin="anonymous"></script>
   </head>
 
   <body class="discoverknw-body body-tp-paddng">
@@ -1245,9 +1292,9 @@ padding-bottom: 20px;
                <ul>
                         <!-- <li><a href="#"><img src="assets/images/bdd1.svg" alt=""></a></li>
                         <li><a href="#"><img src="assets/images/bdd11.svg" alt=""></a></li>-->
-                        <li><a href="#" class="travelBuddy-btn" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmfiveToItinerary"><span><i class="fa-sharp fa-regular fa-images fa-fw" style="color: #653d93;"></i></span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmoneToItinerary"> <span><i class="fa-sharp fa-regular fa-map-location-dot fa-fw" style="color: #653d93;"></i></span> </a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmtwoToItinerary"><span><i class="fa-sharp fa-regular fa-message-lines fa-fw" style="color: #653d93;"></i></span></a></li>
+                        <li><a href="#" class="travelBuddy-btn" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmfiveToItinerary"><span><i class="fa-thin fa-images fa-gradient" style="color: #653d93;"></i></span></a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmoneToItinerary"> <span><i class="fa-thin fa-map-location-dot" style="color: #653d93;"></i></span> </a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmtwoToItinerary"><span><i class="fa-thin fa-message-lines" style="color: #653d93;"></i></span></a></li>
                         <!-- <li><a href="#"><img src="assets/images/date_range.svg" alt=""></a></li>  -->
 
                       </ul>
@@ -3835,7 +3882,7 @@ padding-bottom: 20px;
       <div class="modal-content">
         <button
           type="button"
-          class="btn-close"
+          class="btn-close custom-clse-btn"
           data-bs-dismiss="modal"
           aria-label="Close"
         ></button>
@@ -4283,11 +4330,11 @@ padding-bottom: 20px;
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
   >
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered" >
       <div class="modal-content ">
         <button
           type="button"
-          class="btn-close"
+          class="btn-close btn2-close-mb"
           data-bs-dismiss="modal"
           aria-label="Close"
         ></button>
@@ -7536,8 +7583,8 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                     <h4 class="purplr_txt ">Best Time to Visit</h4>
                     <p>
                       The best time to visit France largely depends on your preferences for weather, budget, events and crowd levels. Also, it depends on your personal preferences and what you want to experience during your trip. Here's a breakdown of the different seasons: <br />
-                      <br />
-                    </p>
+<div class="best-pad-bttm"></div>                  
+  </p>
 
                     <div class="travel-para">
                       <span
@@ -7870,7 +7917,7 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                           <div class="hotDeals-slider nslider_cmn">
                             <div>
                               <div class="item month-rele">
-                                                           <div class="month-para"><p>January</p></div>         
+                                <div class="month-para"><p>January</p></div>         
 
                                 <div class="card-text">
                                   <p>
@@ -7878,6 +7925,11 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_3.jpg"
@@ -7900,6 +7952,11 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_4.jpg"
@@ -7922,6 +7979,11 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_5.jpg"
@@ -7944,6 +8006,11 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -7966,6 +8033,11 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_2.jpg"
@@ -7989,6 +8061,11 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8012,6 +8089,11 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8036,6 +8118,11 @@ One of the major tennis tournaments in the world.
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8059,6 +8146,11 @@ France's National Day celebrated with fireworks, parades, and festivities.
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8082,6 +8174,11 @@ A public holiday marked by events and celebrations.
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8106,6 +8203,11 @@ Showcases international dance performances.
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8129,6 +8231,11 @@ A night of contemporary art installations and performances across Paris.
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8152,6 +8259,11 @@ Celebrates the wine harvest in the heart of Paris.
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8174,6 +8286,11 @@ Celebrates the wine harvest in the heart of Paris.
 The release of the new vintage of Beaujolais wine is celebrated with events and tastings.                                  </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8197,6 +8314,11 @@ Commemorates the end of World War I with ceremonies and events.
                                 </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8220,6 +8342,11 @@ Festive markets are held throughout France, offering holiday gifts and treats.
                                 </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8244,6 +8371,11 @@ A continuation of the Festival of Lights, featuring stunning light displays.
                                 </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8267,6 +8399,11 @@ Celebrated with fireworks, parties, and festive gatherings.
                                 </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8456,7 +8593,7 @@ Always consider the best mode of transport depending on your destination and the
                     </p>
 
                     <!-- cards-trans -->
-<div class="trvl_dshbrd_sec cmn-gap" style="padding-top: 20px;">
+<div class="trvl_dshbrd_sec cmn-gap22" style="padding-top: 30px;" >
           <div class="trvl_dshbrd_innr">
             
             <div class="trvl_dshbrd_wrppr">
@@ -8534,7 +8671,7 @@ Regional Trains
           </div>
       </div>
       <!-- second-cards -->
-      <div class="trvl_dshbrd_sec cmn-gap">
+      <div class="trvl_dshbrd_sec cmn-gap22">
           <div class="trvl_dshbrd_innr">
             
             <div class="trvl_dshbrd_wrppr">
@@ -8614,7 +8751,7 @@ Regional Trains
                     <!-- end-cards -->
 
                     <!-- third-cards -->
- <div class="trvl_dshbrd_sec cmn-gap">
+ <div class="trvl_dshbrd_sec cmn-gap22">
           <div class="trvl_dshbrd_innr">
             
             <div class="trvl_dshbrd_wrppr">
