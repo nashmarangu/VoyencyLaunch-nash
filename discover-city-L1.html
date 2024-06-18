@@ -789,8 +789,8 @@ padding-left: 5px;
 }
 .common-popup .modal-content .btn-close {
     position: absolute;
-    right: 20px;
-    top: -90px;
+    right: 0px;
+    top: -190px;
     box-shadow: none;
     outline: none;
     opacity: 1;
@@ -928,6 +928,32 @@ width: 32px;
         padding: 0px;
     }
 }
+@media (max-width: 568px){
+.btn2-close-mb{
+        position: absolute;
+        right: 0px !important;
+        top: -120px !important;
+        box-shadow: none;
+        outline: none;
+        opacity: 1;
+}
+.custom-clse-btn{
+  position: absolute;
+        right: 0px !important;
+        top: -140px !important;
+        box-shadow: none;
+        outline: none;
+        opacity: 1;
+}
+}
+@media (max-width: 479px) {
+    .cmn-popupBox {
+        padding: 0px;
+        padding-top: 0;
+    }
+}
+
+
     </style>
   <!-- Place your kit's code here -->
             <script src="https://kit.fontawesome.com/3bb618cb3a.js" crossorigin="anonymous"></script>  </head>
@@ -3985,7 +4011,7 @@ width: 32px;
       <div class="modal-content">
         <button
           type="button"
-          class="btn-close"
+          class="btn-close custom-clse-btn"
           data-bs-dismiss="modal"
           aria-label="Close"
         ></button>
@@ -4437,7 +4463,7 @@ width: 32px;
       <div class="modal-content">
         <button
           type="button"
-          class="btn-close"
+          class="btn-close btn2-close-mb"
           data-bs-dismiss="modal"
           aria-label="Close"
         ></button>
