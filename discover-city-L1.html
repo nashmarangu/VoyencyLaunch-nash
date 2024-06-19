@@ -791,7 +791,7 @@ padding-left: 5px;
 .common-popup .modal-content .btn-close {
     position: absolute;
     right: 0px;
-    top: -190px;
+    top: 20px;
     box-shadow: none;
     outline: none;
     opacity: 1;
@@ -933,7 +933,7 @@ width: 32px;
 .btn2-close-mb{
         position: absolute;
         right: 0px !important;
-        top: -120px !important;
+        top: 20px !important;
         box-shadow: none;
         outline: none;
         opacity: 1;
@@ -941,7 +941,7 @@ width: 32px;
 .custom-clse-btn{
   position: absolute;
         right: 0px !important;
-        top: -140px !important;
+        top: 20px !important;
         box-shadow: none;
         outline: none;
         opacity: 1;
@@ -984,6 +984,17 @@ margin: 0 auto;  }
 .discvr-knw-inner-tab-part .resp-tabs-list li:last-child {
   padding-right: 0 !important;
 }
+@media (max-width: 500px){
+.modal-dialog-centered {
+    display: flex;
+    align-items: self-start;
+    min-height: calc(100% - 1rem);
+}
+.modal-content{
+  padding-top: 100px;
+}
+}
+
     </style>
   <!-- Place your kit's code here -->
             <script src="https://kit.fontawesome.com/3bb618cb3a.js" crossorigin="anonymous"></script>  </head>
@@ -7423,6 +7434,7 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                 </div>
                 
               </div>
+             
             <div class="resp-tabs-container">
               <div>
                 <div class="ttd-slider-one-main-sec">

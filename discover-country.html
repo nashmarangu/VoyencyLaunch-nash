@@ -830,7 +830,7 @@ padding-left: 5px;
 .common-popup .modal-content .btn-close {
     position: absolute;
     right: 0px;
-    top: -160px;
+    top: 20px;
     box-shadow: none;
     outline: none;
     opacity: 1;
@@ -942,7 +942,7 @@ padding-bottom: 20px;
 .btn2-close-mb{
         position: absolute;
         right: 0px !important;
-        top: -80px !important;
+        top: 20px !important;
         box-shadow: none;
         outline: none;
         opacity: 1;
@@ -950,7 +950,7 @@ padding-bottom: 20px;
 .custom-clse-btn{
   position: absolute;
         right: 0px;
-        top: -140px !important;
+        top: 20px !important;
         box-shadow: none;
         outline: none;
         opacity: 1;
@@ -1001,6 +1001,16 @@ margin: 0 auto;  }
 }
 .discvr-knw-inner-tab-part .resp-tabs-list li:last-child {
   padding-right: 0 !important;
+}
+@media (max-width: 500px){
+.modal-dialog-centered {
+    display: flex;
+    align-items: self-start;
+    min-height: calc(100% - 1rem);
+}
+.modal-content{
+  padding-top: 100px;
+}
 }
     </style>
     
