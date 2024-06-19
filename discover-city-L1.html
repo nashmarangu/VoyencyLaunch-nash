@@ -691,16 +691,17 @@ font-size: 14px !important;   }
     border-left: solid 1px #eee;
 }
     .stay_wrap .stay_txt {
-        padding-left: 15px;
-        /* border-right: 1px solid #e9ecef; */
-        padding-right: 0px;
-        padding: 10px;
+      padding: 10px 15px;
     }
 .zzz-heart {
-    position: absolute;
-    top: 5px;
-    left: 20px;
+       position: absolute;
+    top: 12px;
+    left: 15px;
     z-index: 10;
+}
+.discvr-page-disclmr-lst-sec {
+    padding-bottom: 60px;
+    padding-top: 20px;
 }
 /* .stay_map_info{
 width: auto !important;
@@ -878,7 +879,7 @@ padding-left: 5px;
 @media only screen and (max-width: 568px) {
 .zzz-heart {
     position: absolute;
-    top: 0px;
+    top: 10px;
     left: 5px;
     z-index: 10;
 }
@@ -952,8 +953,37 @@ width: 32px;
         padding-top: 0;
     }
 }
+.srch_drpDwn {
+    margin-top: -10px !important;
+}
 
 
+.load-more-container{
+  display: none;
+}
+
+/* zzzzzzzzzzzzzzzzzzzz */
+/* Add this CSS code */
+@media (max-width: 569px) {
+  .innr-chckbx-bst-tm-dcvr:nth-child(n+7) {
+    display: none;
+  }
+
+  .load-more-container {
+    display: block;
+    text-align: center;
+margin: 0 auto;  }
+
+
+  #loadMoreBtn{
+    color: #673f86;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+}
+.discvr-knw-inner-tab-part .resp-tabs-list li:last-child {
+  padding-right: 0 !important;
+}
     </style>
   <!-- Place your kit's code here -->
             <script src="https://kit.fontawesome.com/3bb618cb3a.js" crossorigin="anonymous"></script>  </head>
@@ -5625,6 +5655,8 @@ width: 32px;
                         >
                       </p>
                     </div>
+
+             
                   </div>
 
                   <main class="home-page">
@@ -7580,7 +7612,7 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
 
   <!-- load-load -->
   <div class="loadMore-wrap">
-    <a href="javascript:void(0)" id="loadMore">Load More</a>
+    <a href="javascript:void(0)" id="loadMore2">Load More</a>
   </div>
 </div>
 </div>
@@ -7856,8 +7888,14 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                       <!-- load-load-2 -->
                       <!-- <div class="loadMore-wrap2">
     <a href="javascript:void(0)" id="loadMore2">Load More</a>
-  </div>
-                    </div>  -->
+  </div> -->
+
+                                      <!-- load-load -->
+  <div class="load-more-container">
+  <a href="javascript:void(0)" id="loadMoreBtn">Load More</a>
+</div>
+                    <!-- close load -->
+                    </div> 
                     <!-- testing-code -->
                     <main class="home-page">
                       <!-- hot deals section for dashboard -->
@@ -7883,6 +7921,11 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
 Parisians welcome the New Year with fireworks, parties, and festivities, especially around the Champs-Élysées and the Eiffel Tower.                                  </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_3.jpg"
@@ -7904,6 +7947,11 @@ Parisians welcome the New Year with fireworks, parties, and festivities, especia
  Celebrated in the 13th arrondissement, this vibrant event features parades, dragon dances, and traditional performances.                                  </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_4.jpg"
@@ -7925,6 +7973,11 @@ Parisians welcome the New Year with fireworks, parties, and festivities, especia
 Designers from around the world showcase their ready-to-wear collections for the upcoming seasons.                                  </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_5.jpg"
@@ -7946,6 +7999,11 @@ Designers from around the world showcase their ready-to-wear collections for the
 Thousands of runners participate in the Paris Marathon, taking a scenic route through the city's landmarks.                                  </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -7968,6 +8026,11 @@ This annual fair at Pelouse de Reuilly offers amusement rides, games, and tasty 
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_2.jpg"
@@ -7991,6 +8054,11 @@ Tennis fans can catch some of the world's top players competing in this Grand Sl
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8013,6 +8081,11 @@ Tennis fans can catch some of the world's top players competing in this Grand Sl
 Museums across the city stay open late into the night, offering free admission and special events.                                  </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8037,6 +8110,11 @@ A city-wide music festival celebrating the summer solstice with performances on 
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8060,6 +8138,11 @@ Enjoy jazz concerts at Parc Floral de Paris throughout the summer.
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8082,6 +8165,11 @@ Enjoy jazz concerts at Parc Floral de Paris throughout the summer.
 France's National Day is celebrated with military parades, fireworks, and parties throughout the city.                                  </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8106,6 +8194,11 @@ The Seine riverbanks and other areas transform into temporary urban beaches with
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8128,6 +8221,11 @@ The Seine riverbanks and other areas transform into temporary urban beaches with
 Top fashion houses display their haute couture creations during this prestigious event.                                  </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8151,6 +8249,11 @@ A night of contemporary art installations, performances, and exhibitions across 
                                   </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8173,6 +8276,11 @@ A night of contemporary art installations, performances, and exhibitions across 
 Wine bars and restaurants celebrate the release of the new vintage of Beaujolais wine.                                 </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8196,6 +8304,11 @@ Festive markets pop up around the city, offering crafts, gifts, and seasonal tre
                                 </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8219,6 +8332,11 @@ Paris is beautifully adorned with Christmas lights, particularly along the Champ
                                 </p>
                                 </div>
                                 <div class="blgm_othr_cnt_part">
+                                  <div class="hrt-plus-icn-ttd-img">
+                                  <div class="hrt-ttd-icn-img">
+                                    <a href="#" class="active" tabindex="0"><img src="assets/images/wiselist.svg" alt=""></a>
+                                  </div>
+                                </div>
                                   <figure class="main_img">
                                     <!-- <img
                                     src="assets/images/hd_img_1.jpg"
@@ -8249,10 +8367,10 @@ Paris is beautifully adorned with Christmas lights, particularly along the Champ
                   </p>
                 </div>
 
-                    <div class="loadMore-wrap">
+                    <!-- <div class="loadMore-wrap">
                       <a href="javascript:void(0)" id="loadMore">Load More</a>
-                    </div>
-                  </div>
+                    </div> -->
+                  <!-- </div> -->
 
 
                 </div>
@@ -9066,7 +9184,7 @@ Regional Trains
                         <div
                           class="flight_booked_maind_inner submit smbt-txt-btn-flx"
                         >
-                          <div class="return-retest-txt-on-frm-all-top-frm">
+                          <div class="return-retest-txt-on-frm-all-top-frm" style="opacity: 0;">
                             <a class="resetMobile sho-srch-frm-bx" href="#"
                               >Reset</a
                             >
@@ -18529,7 +18647,7 @@ $('.stay_map_slider').slick({
     </script>
 
     <script>
-const loadMoreLink = document.getElementById('loadMore');
+const loadMoreLink = document.getElementById('loadMore2');
 const paragraphs = document.querySelectorAll('.hide-below-548');
 
 function toggleParagraphs() {
@@ -18544,7 +18662,23 @@ function toggleParagraphs() {
 
 loadMoreLink.addEventListener('click', toggleParagraphs);
     </script>
+    <script>// Add this JavaScript code
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const monthDivs = document.querySelectorAll('.innr-chckbx-bst-tm-dcvr');
 
+let showingAll = false;
+
+loadMoreBtn.addEventListener('click', () => {
+  showingAll = !showingAll;
+
+  monthDivs.forEach((div, index) => {
+    if (index >= 6) {
+      div.style.display = showingAll ? 'block' : 'none';
+    }
+  });
+
+  loadMoreBtn.textContent = showingAll ? 'Show Less' : 'Load More';
+});</script>
   
   </body>
 </html>

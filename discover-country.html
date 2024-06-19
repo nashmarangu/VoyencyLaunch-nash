@@ -771,7 +771,8 @@ font-size: 14px !important;   }
     gap: 10px;
     align-items: center;
     font-weight: bold; 
-}
+font-family: 'lato', sans-serif;
+    font-size: 16px;}
 .mb-popup{
   margin-bottom: 20px;
 }
@@ -954,6 +955,52 @@ padding-bottom: 20px;
         outline: none;
         opacity: 1;
 }
+}
+.srch_drpDwn {
+    margin-top: -10px !important;
+}
+/* Initially hide the paragraphs after Summer */
+@media screen and (max-width: 548px) {
+      .loadMore-wrap {
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+}
+  .hide-below-548 {
+    display: none;
+  }
+
+}
+
+/* Show the paragraphs when the "show" class is added */
+.hide-below-548.show {
+  display: flex;
+}
+.load-more-container{
+  display: none;
+}
+
+/* zzzzzzzzzzzzzzzzzzzz */
+/* Add this CSS code */
+@media (max-width: 569px) {
+  .innr-chckbx-bst-tm-dcvr:nth-child(n+7) {
+    display: none;
+  }
+
+  .load-more-container {
+    display: block;
+    text-align: center;
+margin: 0 auto;  }
+
+
+  #loadMoreBtn{
+    color: #673f86;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+}
+.discvr-knw-inner-tab-part .resp-tabs-list li:last-child {
+  padding-right: 0 !important;
 }
     </style>
     
@@ -7608,7 +7655,7 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                         <strong>Summer (June to August):</strong> Summer is the peak tourist season in France, with warm weather and long days perfect for sightseeing, beach holidays, and outdoor festivals. However, popular tourist destinations can get very crowded during this time. <br />
                       </p>
                     </div>
-                    <div class="travel-para">
+                    <div class="travel-para hide-below-548">
                       <span
                         ><img
                           class="right-arrow"
@@ -7619,7 +7666,7 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                         <strong>Fall (September to November):</strong> Autumn in France is a beautiful time to visit, with cooler temperatures and colorful foliage in the countryside. It's a great time to explore vineyards, go hiking, and indulge in seasonal culinary delights like truffles and chestnuts. <br />
                       </p>
                     </div>
-                    <div class="travel-para">
+                    <div class="travel-para hide-below-548">
                       <span
                         ><img
                           class="right-arrow"
@@ -7630,6 +7677,13 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                         <strong>Winter (December to February):</strong> Winter in France can be cold, especially in the northern regions, but it also offers a magical experience with Christmas markets, festive decorations, and winter sports in the Alps. Cities like Paris and Lyon offer a cozy atmosphere during the holiday season. <br />
                       </p>
                     </div>
+
+                     <!-- load-load -->
+  <div class="loadMore-wrap">
+    <a href="javascript:void(0)" id="loadMore2">Load More</a>
+  </div>
+  
+                    <!-- close load -->
                   </div>
 
                   <div class="bst-tm-dcvr-tab-chckbx">
@@ -7767,7 +7821,7 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                           </div>
                         </div>
                       </div>
-                      <div class="innr-chckbx-bst-tm-dcvr">
+                      <div class="innr-chckbx-bst-tm-dcvr ">
                         <input type="checkbox" name="mnth" />
                         <div class="chck-itm-bst-tm-dcvr-bst">
                           <h4>July</h4>
@@ -7898,6 +7952,13 @@ Indulge in the culinary delights of French cuisine, from traditional boulangerie
                           </div>
                         </div>
                       </div>
+
+                             <!-- load-load -->
+  <div class="load-more-container">
+  <a href="javascript:void(0)" id="loadMoreBtn">Load More</a>
+</div>
+                    <!-- close load -->
+                   
                     </div>
                     <!-- testing-code -->
                     <main class="home-page">
@@ -8434,6 +8495,7 @@ Celebrated with fireworks, parties, and festive gatherings.
                     <!-- <div class="loadMore-wrap">
                       <a href="javascript:void(0)" id="loadMore">Load More</a>
                     </div> -->
+                  
                   </div>
                 </div>
               </div>
@@ -9246,7 +9308,7 @@ Regional Trains
                         <div
                           class="flight_booked_maind_inner submit smbt-txt-btn-flx"
                         >
-                          <div class="return-retest-txt-on-frm-all-top-frm">
+                          <div class="return-retest-txt-on-frm-all-top-frm" style="opacity: 0;">
                             <a class="resetMobile sho-srch-frm-bx" href="#"
                               >Reset</a
                             >
@@ -18705,5 +18767,39 @@ otherDropdown.addEventListener('click', function() {
   addOther.style.display = 'block';
 });
 </script>
+ <script>
+const loadMoreLink = document.getElementById('loadMore2');
+const paragraphs = document.querySelectorAll('.hide-below-548');
+
+function toggleParagraphs() {
+  paragraphs.forEach(paragraph => paragraph.classList.toggle('show'));
+
+  if (loadMoreLink.textContent === 'Load More') {
+    loadMoreLink.textContent = 'Show Less';
+  } else {
+    loadMoreLink.textContent = 'Load More';
+  }
+}
+
+loadMoreLink.addEventListener('click', toggleParagraphs);
+    </script>
+
+    <script>// Add this JavaScript code
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const monthDivs = document.querySelectorAll('.innr-chckbx-bst-tm-dcvr');
+
+let showingAll = false;
+
+loadMoreBtn.addEventListener('click', () => {
+  showingAll = !showingAll;
+
+  monthDivs.forEach((div, index) => {
+    if (index >= 6) {
+      div.style.display = showingAll ? 'block' : 'none';
+    }
+  });
+
+  loadMoreBtn.textContent = showingAll ? 'Show Less' : 'Load More';
+});</script>
   </body>
 </html>
