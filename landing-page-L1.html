@@ -399,6 +399,19 @@
         color: #000000;
         font-size: 14px;
       }
+      .container,
+      .container-fluid,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, 0.15rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        margin-right: auto;
+        margin-left: auto;
+      }
     </style>
 
     <!-- END-CUSTOM-CSS -->
@@ -1750,7 +1763,10 @@
                         <div
                           class="flight_booked_maind_inner submit smbt-txt-btn-flx"
                         >
-                          <div class="return-retest-txt-on-frm-all-top-frm">
+                          <div
+                            class="return-retest-txt-on-frm-all-top-frm"
+                            style="opacity: 0"
+                          >
                             <a class="resetMobile sho-srch-frm-bx" href="#"
                               >Reset</a
                             >
