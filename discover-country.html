@@ -1012,6 +1012,33 @@ margin: 0 auto;  }
   padding-top: 70px;
 }
 }
+.trip_details_slect i {
+    margin-right: 8px;
+    font-size: 1.5rem;
+    line-height: 0;
+}
+.cmn-popupDate i {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cmn-popupInputWithIcon-wrap i {
+    position: absolute;
+    left: 13px;
+    top: 7px;
+}
+.zzzz1{
+      margin: 0 0 20px;
+}
+@media (max-width: 479px) {
+    .zzzz1{
+      margin: 0 0 0px;
+}
+}
     </style>
     
             <!-- Place your kit's code here -->
@@ -1349,9 +1376,9 @@ margin: 0 auto;  }
                <ul>
                         <!-- <li><a href="#"><img src="assets/images/bdd1.svg" alt=""></a></li>
                         <li><a href="#"><img src="assets/images/bdd11.svg" alt=""></a></li>-->
-                        <li><a href="#" class="travelBuddy-btn" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmfiveToItinerary"><span><i class="fa-thin fa-images fa-gradient" style="color: #653d93;"></i></span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmoneToItinerary"> <span><i class="fa-thin fa-map-location-dot" style="color: #653d93;"></i></span> </a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmtwoToItinerary"><span><i class="fa-thin fa-message-lines" style="color: #653d93;"></i></span></a></li>
+                        <li><a href="#" class="travelBuddy-btn" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmfiveToItinerary"><span><i class="fa-light fa-images fa-gradient" style="color: #653d93;"></i></span></a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmoneToItinerary"> <span><i class="fa-light fa-map-location-dot" style="color: #653d93;"></i></span> </a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addAddcoomn-restrmtwoToItinerary"><span><i class="fa-light fa-message-lines" style="color: #653d93;"></i></span></a></li>
                         <!-- <li><a href="#"><img src="assets/images/date_range.svg" alt=""></a></li>  -->
 
                       </ul>
@@ -4473,23 +4500,10 @@ margin: 0 auto;  }
                             class="all-ftr-alt-cty-arw-bar"
                             id="popupCommonTab12-2"
                           >
-              
-
-                          <div class="cmn-popupInputWithIcon-wrap popupCommon-margin">
-                            <i><img src="assets/images/location.svg" alt=""></i>
-                            <input type="text" placeholder="Location Name" class=" cmn-popupInputWithIcon" spellcheck="false" data-ms-editor="true">
-                            
-                          </div>
-                          <div class="cmn-popupInputWithIcon-wrap popupCommon-margin">
-                            <i><img src="assets/images/location.svg" alt=""></i>
-                            <input type="text" placeholder="Address" class=" cmn-popupInputWithIcon" spellcheck="false" data-ms-editor="true">
-                            
-                          </div>
-                          <div class="cmn-popupDate-wrap popupCommon-margin">
+               <div class="cmn-popupDate-wrap popupCommon-margin zzzz1">
                             <div class="upcmn-trp-nw-popup-fr-lst-tim cmn-popupDate">
                               <div class="trip_details_slect">
-                                <i><img src="assets/images/popup-clock.svg" alt=""></i>
-                                   
+<i class="fa-light fa-grid-2" style="color: #653d93;" aria-hidden="true"></i>                                   
                                 <div class="dropdown">
                                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSortButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <!-- <i class="iccn"
@@ -4517,10 +4531,10 @@ margin: 0 auto;  }
                             </div>
                           </div>
                           <!-- nashnash -->
-                          <div class="cmn-popupDate-wrap popupCommon-margin">
+                          <div class="cmn-popupDate-wrap popupCommon-margin zzzz1">
                             <div class="upcmn-trp-nw-popup-fr-lst-tim cmn-popupDate">
                               <div class="trip_details_slect">
-                                <i><img src="assets/images/popup-clock.svg" alt=""></i>
+<i class="fa-light fa-grid-2" style="color: #653d93;" aria-hidden="true"></i>                                   
                                    
                                 <div class="dropdown">
                                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSortButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -4550,6 +4564,18 @@ margin: 0 auto;  }
                           </div>
 
                           <!-- endnashnash -->
+
+                          <div class="cmn-popupInputWithIcon-wrap popupCommon-margin">
+                            <i><img src="assets/images/location.svg" alt=""></i>
+                            <input type="text" placeholder="Location Name" class=" cmn-popupInputWithIcon" spellcheck="false" data-ms-editor="true">
+                            
+                          </div>
+                          <div class="cmn-popupInputWithIcon-wrap popupCommon-margin">
+                            <i><img src="assets/images/location.svg" alt=""></i>
+                            <input type="text" placeholder="Address" class=" cmn-popupInputWithIcon" spellcheck="false" data-ms-editor="true">
+                            
+                          </div>
+                         
 
 
 
