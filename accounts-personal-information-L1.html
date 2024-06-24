@@ -127,6 +127,60 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
+     <style>
+      .icon_menu li {
+        margin: 0 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .user-wrap {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        padding: 12px;
+      }
+      .usr_dropdwn .dropdown ul {
+        width: 258px;
+      }
+      .user-img img {
+        border-radius: 50%;
+      }
+      @media (max-width: 1024px) {
+        .user-wrap {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+          padding: 12px;
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+      @media (max-width: 1024px) {
+        .new_in_head_btmd.show {
+          width: 300px;
+        }
+      }
+     
+      .bottom-fixt-mne-all-pgs ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom-fixt-mne-all-pgs ul li a p {
+        color: #000000;
+        font-size: 14px;
+      }
+      .srch_drpDwn_wpr {
+    max-width: 60% !important;
+    padding: 0 15px !important;
+}.ttd-tp-left {
+    flex-grow: inherit;
+    width: 50%;
+    flex: 0 0 95% !important;
+}
+    </style>
   </head>
 
   <body class="body-tp-paddng nofooter">
@@ -207,210 +261,312 @@
       </div>
     </div>
     <div class="right-panel">
-      <header class="flex-wrap fixt-top-headr">
-        <div class="new_in_head_wrapper">
-          <div class="tripiry box_shdw">
-            <nav class="navbar navbar-expand-md navbar-light">
-              <div class="container">
-                <a class="navbar-brand" href="dashboard.html"
-                  ><img
-                    src="assets/images/logo_sml_hedr.svg"
-                    class="img-fluid"
-                    alt="Tripiry"
-                /></a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarCollapse"
-                  aria-controls="navbarCollapse"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <button class="mobile_menu_btn" type="button" >
-                  Menu <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  class="collapse navbar-collapse usr_dropdwn"
-                  id="navbarCollapse"
-                >
-                  <ul class="navbar-nav justify-content-end d-flex icon_menu">
-                    <li>
-                      <a href="dashboard.html" class="dashboard">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="my_trips.html" class="mytrip">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="#" class="discvr">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="" class="chat-icn-hdr">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="" class="notfcn">&nbsp;</a>
-                    </li>
-                  </ul>
-  
-                  <div class="flex-shrink-0 dropdown dd_user">
-                    <a
-                      href="profile.html"
-                      class="d-block link-dark text-decoration-none dropdown-toggle"
-                      id="dropdownUser2"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <img
-                        src="assets/images/burna.jpg"
-                        alt="Burna"
-                        width="32"
-                        height="32"
-                        class="rounded-circle userProfile-img"
-                      />
-                      Burna
-                    </a>
-                    <ul
-                      class="dropdown-menu text-small shadow"
-                      aria-labelledby="dropdownUser2"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="profile-information.html"
-                          ><img src="assets/images/dd_user.svg" alt="" />
-                          Accounts</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="travel_goals.html"
-                          ><img src="assets/images/dd_travel_goal.svg" alt="" />
-                          Travel Goals</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="wishlist.html"
-                          ><img src="assets/images/dd_saved.svg" alt="" />
-                          Saved</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="coming_soon.html"
-                          ><img src="assets/images/dd_subscription.svg" alt="" />
-                          Subscription</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="coming_soon.html"
-                          ><img src="assets/images/dd_currency.svg" alt="" />
-                          Currency</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="coming_soon.html"
-                          ><img src="assets/images/dd_settings.svg" alt="" />
-                          Settings</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="sign_in.html"
-                          ><img src="assets/images/dd_signout.svg" alt="" /> Sign
-                          out</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--collapse div ends here-->
-              </div>
-            </nav>
-          </div>
-  
-          <div class="new_in_head_btmd new_menu_dashboard">
+     <header class="flex-wrap fixt-top-headr">
+      <div class="new_in_head_wrapper">
+        <div class="tripiry box_shdw">
+          <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
-              <button class="mobile_menu_btn close">
-                <span><img src="assets/images/nav-close.svg" alt="" /></span>
+              <a class="navbar-brand" href="dashboard.html"
+                ><img
+                  src="assets/images/logo_sml_hedr.svg"
+                  class="img-fluid"
+                  alt="Tripiry"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="profile-main-menu">
-                <ul>
-                      <li>
-                        <a class="dropdown-item" href="accounts.html">
-                          <i><img src="assets/images/dd_user.svg" alt="" /></i>
-                          Accounts
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="travel_goals.html">
-                          <i><img src="assets/images/dd_travel_goal.svg" alt="" /></i>
-                          Travel Goals
-                          </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="wishlist.html">
-                          <i><img src="assets/images/dd_saved.svg" alt="" /></i>
-                          Saved
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="coming_soon.html">
-                          <i><img src="assets/images/dd_subscription.svg" alt="" /></i>
-                          Subscription
-                          </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="coming_soon.html">
-                          <i><img src="assets/images/dd_currency.svg" alt="" /></i>
-                          Currency
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="coming_soon.html">
-                          <i><img src="assets/images/dd_settings.svg" alt="" /></i>
-                          Settings
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="sign_in.html">
-                          <i><img src="assets/images/dd_signout.svg" alt="" /></i>
-                           Sign out
-                        </a>
-                      </li>
-                    </ul>
-            </div>
-            </div>
-          </div>
-  
-          <button id="navoverlay" class="mobile_menu_btn"></button>
-          <!-- <div class="mobile-menu-top-option-show">
-            <div class="container">
-              <ul class="navbar_bts_btm">
-                <li class="menu-item-has-children">
-                  <a class="plan-trip-show" href="#url">Plan A Trip</a>
-                  <ul class="sub-menu">
+              <button class="mobile_menu_btn" type="button">
+                Menu <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse usr_dropdwn"
+                id="navbarCollapse"
+              >
+                <ul class="navbar-nav justify-content-end d-flex icon_menu">
+                  <li>
+                    <img
+                      style="width: 20px; height: 18px"
+                      src="./assets/images/home.svg"
+                      alt=""
+                    />
+                    Home
+                  </li>
+                  <li>
+                    <a href="#" class="discvr">
+                      <img
+                        style="width: 18px; height: 18px"
+                        src="./assets/icons/search_4687318.png"
+                        alt=""
+                    /></a>
+                    Discover
+                  </li>
+                  <li id="icon-toggle">
+                    <img
+                      class="ic-1"
+                      style="width: 18px; height: 18px"
+                      src="./assets/icons/love_8647296.png"
+                      alt="heart-icon"
+                    />
+                    <img
+                      class="ic-2"
+                      src="./assets/icons/icon-heart-filled.png"
+                      alt="heart-icon"
+                    />
+                    <!-- <i class="fa-regular fa-heart"></i>  -->
+                    Saved
+                  </li>
+                </ul>
+
+                <div class="flex-shrink-0 dropdown dd_user">
+                  <a
+                    href="profile.html"
+                    class="d-block link-dark text-decoration-none dropdown-toggle"
+                    id="dropdownUser2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="assets/images/burna.jpg"
+                      alt="Burna"
+                      width="32"
+                      height="32"
+                      class="rounded-circle userProfile-img"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu text-small shadow"
+                    aria-labelledby="dropdownUser2"
+                  >
                     <li>
-                      <a
-                        href="#"
-                        data-bs-toggle="modal"profile-sec dash_cmn_gap
-                        data-bs-target="#dialog-content1"
-                        ><i
-                          ><img src="assets/images/subMenu-plus.svg" alt=""
-                        /></i>
-                        New Trip</a
+                      <div class="user-wrap">
+                        <div class="user-img">
+                          <img src="./assets/images/burna.jpg" alt="" />
+                        </div>
+                        <div class="user-text">
+                          <p>Burna Boy</p>
+                          <p>burna.boy@gmail.com</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile-information.html"
+                        ><img src="assets/images/dd_user.svg" alt="" />
+                        Accounts</a
                       >
                     </li>
-                    <li><a href="#url">Paris Trip</a></li>
-                    <li><a href="#url">Bachelor Party</a></li>
-                    <li><a href="#url">Dirty 30</a></li>
+                    <li>
+                      <a class="dropdown-item" href="travel_goals.html"
+                        ><img src="assets/images/dd_travel_goal.svg" alt="" />
+                        Travel Goals</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="wishlist.html"
+                        ><img src="assets/images/dd_saved.svg" alt="" />
+                        Saved</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="coming_soon.html"
+                        ><img src="assets/images/dd_subscription.svg" alt="" />
+                        Subscription</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="coming_soon.html"
+                        ><img src="assets/images/dd_currency.svg" alt="" />
+                        Currency</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="coming_soon.html"
+                        ><img src="assets/images/dd_settings.svg" alt="" />
+                        Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="sign_in.html"
+                        ><img src="assets/images/dd_signout.svg" alt="" /> Sign
+                        out</a
+                      >
+                    </li>
                   </ul>
+                </div>
+              </div>
+              <!--collapse div ends here-->
+            </div>
+          </nav>
+        </div>
+
+        <div class="new_in_head_btmd new_menu_dashboard">
+          <div class="container">
+            <button class="mobile_menu_btn close">
+              <span><img src="assets/images/nav-close.svg" alt="" /></span>
+            </button>
+            <div
+              class="profile-main-menu"
+              tabindex="1"
+              style="overflow: hidden; outline: none"
+            >
+              <ul>
+                <li>
+                  <div class="user-wrap">
+                    <div class="user-img">
+                      <img src="./assets/images/burna.jpg" alt="" />
+                    </div>
+                    <div class="user-text">
+                      <p>Burna Boy</p>
+                      <p>burna.boy@gmail.com</p>
+                    </div>
+                  </div>
                 </li>
-                <li><a href="#url">Discover</a></li>
-                <li class="current-menu-item"><a href="#url">Flights</a></li>
-                <li><a href="#url">Stays</a></li>
-                <li><a href="#url">Things To Do</a></li>
+                <li>
+                  <a class="dropdown-item" href="accounts.html">
+                    <i><img src="assets/images/dd_user.svg" alt="" /></i>
+                    Accounts
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="travel_goals.html">
+                    <i><img src="assets/images/dd_travel_goal.svg" alt="" /></i>
+                    Travel Goals
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wishlist.html">
+                    <i><img src="assets/images/dd_saved.svg" alt="" /></i>
+                    Saved
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="coming_soon.html">
+                    <i
+                      ><img src="assets/images/dd_subscription.svg" alt=""
+                    /></i>
+                    Subscription
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="coming_soon.html">
+                    <i><img src="assets/images/dd_currency.svg" alt="" /></i>
+                    Currency
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="coming_soon.html">
+                    <i><img src="assets/images/dd_settings.svg" alt="" /></i>
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sign_in.html">
+                    <i><img src="assets/images/dd_signout.svg" alt="" /></i>
+                    Sign out
+                  </a>
+                </li>
               </ul>
             </div>
-          </div> -->
+          </div>
         </div>
-      </header>
+
+        <button id="navoverlay" class="mobile_menu_btn"></button>
+        <!-- <div class="mobile-menu-top-option-show">
+          <div class="container">
+            <ul class="navbar_bts_btm">
+              <li class="menu-item-has-children">
+                <a class="plan-trip-show" href="#url">Plan A Trip</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#dialog-content1"
+                      ><i
+                        ><img src="assets/images/subMenu-plus.svg" alt=""
+                      /></i>
+                      New Trip</a
+                    >
+                  </li>
+                  <li><a href="#url">Paris Trip</a></li>
+                  <li><a href="#url">Bachelor Party</a></li>
+                  <li><a href="#url">Dirty 30</a></li>
+                </ul>
+              </li>
+              <li><a href="#url">Discover</a></li>
+              <li class="current-menu-item"><a href="#url">Flights</a></li>
+              <li><a href="#url">Stays</a></li>
+              <li><a href="#url">Things To Do</a></li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+      <div
+        id="ascrail2000"
+        class="nicescroll-rails nicescroll-rails-vr"
+        style="
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 6px;
+          z-index: 1001;
+          cursor: default;
+          position: absolute;
+          top: 0px;
+          left: -6px;
+          height: 0px;
+          display: none;
+        "
+      >
+        <div
+          class="nicescroll-cursors"
+          style="
+            position: relative;
+            top: 0px;
+            float: right;
+            width: 6px;
+            height: 0px;
+            background-color: rgb(196, 196, 196);
+            border: none;
+            background-clip: padding-box;
+            border-radius: 50px;
+          "
+        ></div>
+      </div>
+      <div
+        id="ascrail2000-hr"
+        class="nicescroll-rails nicescroll-rails-hr"
+        style="
+          height: 6px;
+          z-index: 1001;
+          top: -26px;
+          left: 0px;
+          position: absolute;
+          cursor: default;
+          display: none;
+        "
+      >
+        <div
+          class="nicescroll-cursors"
+          style="
+            position: absolute;
+            top: 0px;
+            height: 6px;
+            width: 0px;
+            background-color: rgb(196, 196, 196);
+            border: none;
+            background-clip: padding-box;
+            border-radius: 50px;
+          "
+        ></div>
+      </div>
+    </header>
       <div class="profile-sec profile-secv2 dash_cmn_gap padding_for_calendar" >
         <div class="container">
             
@@ -518,7 +674,7 @@
                             </div>
                             
                             
-                            <div class="col-lg-4 col-md-6 profile-form-col">
+                            <!-- <div class="col-lg-4 col-md-6 profile-form-col">
                                 <div class="profile-form-group">
                                     <input type="text" placeholder="Main Departing City" class="profile-input-cmn departure-suggestion-btn">
                                     <div class="dcheck-search-dropdown2">
@@ -531,14 +687,14 @@
                                       </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             
                         </div>
-                        <a href="javascript:void(0)" class="add_depart_city">
+                        <!-- <a href="javascript:void(0)" class="add_depart_city">
                             <i><img src="assets/images/pllss11.svg" alt=""></i>
                             Add Departing City
                             
-                        </a>
+                        </a> -->
 
 
                         <div class="signup-nextBtn">
@@ -7314,7 +7470,508 @@
       </div>
     </div>
      <!-- Search Drop-Down -->
+ <!-- Search Drop-Down -->
+    <div class="srch_drpDwn">
+      <div class="srch_drpDwn_wpr">
+        <div class="srch_drpDwn_inner">
+          <a href="javascript:void(0);" class="search_drpDwn_close">
+            <img src="assets/images/calendar-back.svg" alt="" />
+          </a>
+          <div id="srchDrpDwnTab">
+            <ul class="resp-tabs-list uls srchDrp_1">
+              <li>Discover</li>
+              <!-- <li>Flights</li>
+              <li>Stays</li>
+              <li>Things To Do</li> -->
+            </ul>
+            <div class="resp-tabs-container srchDrp_1">
+              <div>
+                <div class="srch_drpDwn_hldr">
+                  <div
+                    class="flight_at_dtls_top_wrapper cusCalender-wrapper cmmn-inpt-new-width hide-frm-to-srch-box ttd-searchBox flight_at_dtls_top_wrapper_cus_margin"
+                  >
+                    <form>
+                      <div class="flight_booked_maind">
+                        <div class="flight_booked_maind_inner ttd-tp-left">
+                          <div class="form-group">
+                            <i
+                              ><img src="assets/images/placeholder.svg" alt=""
+                            /></i>
+                            <input
+                              type="text"
+                              placeholder="Where to ?"
+                              class="suggestionOpen"
+                            />
+                          </div>
+                          <div class="airport-suggestion-dropdown">
+                            <div class="rcnt_srchBox">
+                              <div class="srch_drpHdng">
+                                <h5>Recent Search</h5>
+                              </div>
+                              <div class="srch_plce_row">
+                                <ul class="srch_plces_lstng">
+                                  <li>
+                                    <a href="#url">Paris</a>
+                                  </li>
+                                  <li>
+                                    <a href="#url">Japan</a>
+                                  </li>
+                                  <li>
+                                    <a href="#url">Washington D.C</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="rcnt_srchBox intrst_srchBox">
+                              <div class="srch_drpHdng">
+                                <h5>Interest</h5>
+                              </div>
+                              <div class="srch_plce_row">
+                                <ul class="srch_plces_lstng">
+                                  <li>
+                                    <a href="#">Popular</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Staycation</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Nearby</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Events</a>
+                                  </li>
+                                </ul>
+                                <ul class="srch_plces_lstng">
+                                  <li>
+                                    <a href="#">Beach</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Wellness</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Spiritual</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Romance</a>
+                                  </li>
+                                </ul>
+                                <ul class="srch_plces_lstng">
+                                  <li>
+                                    <a href="#">City</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Nightlife</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Luxury</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Shopping</a>
+                                  </li>
+                                </ul>
+                                <ul class="srch_plces_lstng">
+                                  <li>
+                                    <a href="#">Wildlife</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Outdoors</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">National Park</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Family</a>
+                                  </li>
+                                </ul>
+                                <ul class="srch_plces_lstng">
+                                  <li>
+                                    <a href="#">Historic</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Culture</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Cuisine</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">LGBTQ+</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <div class="flight_booked_maind_inner">
+                          <div class="form-group">
+                            <i class="calndr-big-img-icn"
+                              ><img src="assets/images/calnew.svg" alt=""
+                            /></i>
+                            <input
+                              type="text"
+                              placeholder="Tue, Apr 19"
+                              class="cusDate-picker"
+                            />
+                          </div>
+                        </div> -->
 
+                        <div
+                          class="flight_booked_maind_inner submit smbt-txt-btn-flx"
+                        >
+                          <div
+                            style="opacity: 0"
+                            class="return-retest-txt-on-frm-all-top-frm"
+                          >
+                            <a class="resetMobile sho-srch-frm-bx" href="#"
+                              >Reset</a
+                            >
+                          </div>
+                          <div class="form-group">
+                            <button type="button">
+                              <img src="assets/images/search.svg" alt="" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cusCalender">
+                        <div id="parentHorizontalTab">
+                          <div class="cmn-calendarHead">
+                            <a
+                              href="javascript:void(0)"
+                              class="cusCalender-closeBtn"
+                              ><img src="assets/images/close.svg" alt=""
+                            /></a>
+                            <ul class="resp-tabs-list hor_1">
+                              <li id="calendar">Calendar</li>
+                            </ul>
+                          </div>
+                          <div class="resp-tabs-container hor_1">
+                            <div>
+                              <div class="calenderMain">
+                                <div class="containerForm">
+                                  <input
+                                    type="text"
+                                    id="from"
+                                    class="from"
+                                    size="10"
+                                  />
+                                  <input
+                                    type="text"
+                                    id="to"
+                                    class="to"
+                                    size="10"
+                                  />
+                                </div>
+                                <div class="datepicker2 ll-skin-melon"></div>
+                              </div>
+                              <div class="calendarMain-mobile">
+                                <!-- <div class="containerForm">
+                                    <input type="text" id="from" class="from" size="10" />
+                                    <input type="text" id="to" class="to" size="10" />
+                                  </div> -->
+                                <div class="datepicker ll-skin-melon"></div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="searchCalender-area">
+                                <span class="searchCalender-title">
+                                  Search for
+                                </span>
+                                <ul class="searchCalender-list">
+                                  <li>
+                                    <input type="checkbox" />
+
+                                    <label class="check-cal">
+                                      <i
+                                        ><img
+                                          src="assets/images/cal1.svg"
+                                          alt=""
+                                      /></i>
+                                      Cheapest Month
+                                    </label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" />
+                                    <label class="check-cal active">
+                                      <i
+                                        ><img
+                                          src="assets/images/cal2.svg"
+                                          alt=""
+                                      /></i>
+                                      Best Time To Visit
+                                    </label>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="goCalender-area">
+                                <span class="searchCalender-title">
+                                  Or Go in
+                                </span>
+                                <div class="goCalender-slider">
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        All
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        January
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        February
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        March
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        April
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        May
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        June
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        July
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        August
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        September
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        October
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        November
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="goCalender-inner">
+                                      <input type="checkbox" />
+
+                                      <label class="check-cal">
+                                        <i>
+                                          <img
+                                            src="assets/images/goCal.svg"
+                                            alt=""
+                                          />
+                                        </i>
+                                        December
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="stayCalender-area">
+                                <span class="searchCalender-title">
+                                  Stay for a
+                                </span>
+                                <ul class="searchCalender-list">
+                                  <li>
+                                    <input type="checkbox" />
+
+                                    <label class="check-cal"> Weekend </label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" />
+
+                                    <label class="check-cal"> Week </label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" />
+
+                                    <label class="check-cal"> Month </label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" />
+
+                                    <label class="check-cal"> Days </label>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search Drop-Down -->
+    <div class="bottom-fixt-mne-all-pgs">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="assets/images/home_hover.svg" alt="" />
+              <p>Home</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="discvr"
+              ><img src="assets/images/discover_hover.svg" alt="" />
+              <p>Discover</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img src="assets/icons/love_8647296.png" alt="" />
+              <p>Saved</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     <script type="text/javascript">
       $('#noscroll').click(function (e) {
         doSomething()

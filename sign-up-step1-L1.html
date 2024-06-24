@@ -132,6 +132,54 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
+    <style>
+      .icon_menu li {
+        margin: 0 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .user-wrap {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        padding: 12px;
+      }
+      .usr_dropdwn .dropdown ul {
+        width: 258px;
+      }
+      .user-img img {
+        border-radius: 50%;
+      }
+      @media (max-width: 1024px) {
+        .user-wrap {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+          padding: 12px;
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+      @media (max-width: 1024px) {
+        .new_in_head_btmd.show {
+          width: 300px;
+        }
+      }
+      .signup-nextBtn {
+        padding-top: 86px;
+      }
+      .bottom-fixt-mne-all-pgs ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom-fixt-mne-all-pgs ul li a p {
+        color: #000000;
+        font-size: 14px;
+      }
+    </style>
   </head>
 
   <body class="body-tp-paddng">
@@ -166,19 +214,36 @@
               >
                 <ul class="navbar-nav justify-content-end d-flex icon_menu">
                   <li>
-                    <a href="dashboard.html" class="dashboard">&nbsp;</a>
+                    <img
+                      style="width: 20px; height: 18px"
+                      src="./assets/images/home.svg"
+                      alt=""
+                    />
+                    Home
                   </li>
                   <li>
-                    <a href="my_trips.html" class="mytrip">&nbsp;</a>
+                    <a href="#" class="discvr">
+                      <img
+                        style="width: 18px; height: 18px"
+                        src="./assets/icons/search_4687318.png"
+                        alt=""
+                    /></a>
+                    Discover
                   </li>
-                  <li>
-                    <a href="#" class="discvr">&nbsp;</a>
-                  </li>
-                  <li>
-                    <a href="" class="chat-icn-hdr">&nbsp;</a>
-                  </li>
-                  <li>
-                    <a href="" class="notfcn">&nbsp;</a>
+                  <li id="icon-toggle">
+                    <img
+                      class="ic-1"
+                      style="width: 18px; height: 18px"
+                      src="./assets/icons/love_8647296.png"
+                      alt="heart-icon"
+                    />
+                    <img
+                      class="ic-2"
+                      src="./assets/icons/icon-heart-filled.png"
+                      alt="heart-icon"
+                    />
+                    <!-- <i class="fa-regular fa-heart"></i>  -->
+                    Saved
                   </li>
                 </ul>
 
@@ -197,12 +262,22 @@
                       height="32"
                       class="rounded-circle userProfile-img"
                     />
-                    Burna
                   </a>
                   <ul
                     class="dropdown-menu text-small shadow"
                     aria-labelledby="dropdownUser2"
                   >
+                    <li>
+                      <div class="user-wrap">
+                        <div class="user-img">
+                          <img src="./assets/images/burna.jpg" alt="" />
+                        </div>
+                        <div class="user-text">
+                          <p>Burna Boy</p>
+                          <p>burna.boy@gmail.com</p>
+                        </div>
+                      </div>
+                    </li>
                     <li>
                       <a class="dropdown-item" href="profile-information.html"
                         ><img src="assets/images/dd_user.svg" alt="" />
@@ -258,8 +333,23 @@
             <button class="mobile_menu_btn close">
               <span><img src="assets/images/nav-close.svg" alt="" /></span>
             </button>
-            <div class="profile-main-menu">
+            <div
+              class="profile-main-menu"
+              tabindex="1"
+              style="overflow: hidden; outline: none"
+            >
               <ul>
+                <li>
+                  <div class="user-wrap">
+                    <div class="user-img">
+                      <img src="./assets/images/burna.jpg" alt="" />
+                    </div>
+                    <div class="user-text">
+                      <p>Burna Boy</p>
+                      <p>burna.boy@gmail.com</p>
+                    </div>
+                  </div>
+                </li>
                 <li>
                   <a class="dropdown-item" href="accounts.html">
                     <i><img src="assets/images/dd_user.svg" alt="" /></i>
@@ -339,6 +429,64 @@
             </ul>
           </div>
         </div> -->
+      </div>
+      <div
+        id="ascrail2000"
+        class="nicescroll-rails nicescroll-rails-vr"
+        style="
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 6px;
+          z-index: 1001;
+          cursor: default;
+          position: absolute;
+          top: 0px;
+          left: -6px;
+          height: 0px;
+          display: none;
+        "
+      >
+        <div
+          class="nicescroll-cursors"
+          style="
+            position: relative;
+            top: 0px;
+            float: right;
+            width: 6px;
+            height: 0px;
+            background-color: rgb(196, 196, 196);
+            border: none;
+            background-clip: padding-box;
+            border-radius: 50px;
+          "
+        ></div>
+      </div>
+      <div
+        id="ascrail2000-hr"
+        class="nicescroll-rails nicescroll-rails-hr"
+        style="
+          height: 6px;
+          z-index: 1001;
+          top: -26px;
+          left: 0px;
+          position: absolute;
+          cursor: default;
+          display: none;
+        "
+      >
+        <div
+          class="nicescroll-cursors"
+          style="
+            position: absolute;
+            top: 0px;
+            height: 6px;
+            width: 0px;
+            background-color: rgb(196, 196, 196);
+            border: none;
+            background-clip: padding-box;
+            border-radius: 50px;
+          "
+        ></div>
       </div>
     </header>
 
@@ -507,32 +655,14 @@
                     />
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 profile-form-col">
-                  <div class="profile-form-group">
-                    <input
-                      type="text"
-                      placeholder="Main Departing City"
-                      class="profile-input-cmn departure-suggestion-btn"
-                    />
-                    <div class="dcheck-search-dropdown2">
-                      <ul>
-                        <li><a href="#">City 1</a></li>
-                        <li><a href="#">City 2</a></li>
-                        <li><a href="#">City 3</a></li>
-                        <li><a href="#">City 4</a></li>
-                        <li><a href="#">City 5</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <a href="javascript:void(0)" class="add_depart_city">
+              <!-- <a href="javascript:void(0)" class="add_depart_city">
                 <i><img src="assets/images/pllss11.svg" alt="" /></i>
                 Add Departing City
-              </a>
+              </a> -->
 
               <div class="signup-nextBtn">
-                <a href="#">Next</a>
+                <a href="#">Done</a>
               </div>
             </form>
           </div>
@@ -798,9 +928,9 @@
           <div id="srchDrpDwnTab">
             <ul class="resp-tabs-list uls srchDrp_1">
               <li>Discover</li>
-              <li>Flights</li>
+              <!-- <li>Flights</li>
               <li>Stays</li>
-              <li>Things To Do</li>
+              <li>Things To Do</li> -->
             </ul>
             <div class="resp-tabs-container srchDrp_1">
               <div>
@@ -919,7 +1049,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="flight_booked_maind_inner">
+                        <!-- <div class="flight_booked_maind_inner">
                           <div class="form-group">
                             <i class="calndr-big-img-icn"
                               ><img src="assets/images/calnew.svg" alt=""
@@ -930,25 +1060,15 @@
                               class="cusDate-picker"
                             />
                           </div>
-                        </div>
-
-                        <div class="flight_booked_maind_inner">
-                          <div class="form-group">
-                            <i class="calndr-big-img-icn"
-                              ><img src="assets/images/calnew.svg" alt=""
-                            /></i>
-                            <input
-                              type="text"
-                              placeholder="Sun, Apr 24"
-                              class="cusDate-picker"
-                            />
-                          </div>
-                        </div>
+                        </div> -->
 
                         <div
                           class="flight_booked_maind_inner submit smbt-txt-btn-flx"
                         >
-                          <div class="return-retest-txt-on-frm-all-top-frm">
+                          <div
+                            style="opacity: 0"
+                            class="return-retest-txt-on-frm-all-top-frm"
+                          >
                             <a class="resetMobile sho-srch-frm-bx" href="#"
                               >Reset</a
                             >
@@ -2930,7 +3050,7 @@
                             </div>
                           </div>
 
-                          <div class="flight_booked_maind_inner calender">
+                          <!-- <div class="flight_booked_maind_inner calender">
                             <div class="form-group">
                               <i class="calndr-big-img-icn"
                                 ><img src="assets/images/calendar2.svg" alt=""
@@ -2941,7 +3061,7 @@
                                 class="cusDate-picker"
                               />
                             </div>
-                          </div>
+                          </div> -->
 
                           <div class="flight_booked_maind_inner flexible">
                             <div class="form-group">
@@ -10244,9 +10364,35 @@
       </div>
     </div>
     <!-- Search Drop-Down -->
+    <div class="bottom-fixt-mne-all-pgs">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="assets/images/home_hover.svg" alt="" />
+              <p>Home</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="discvr"
+              ><img src="assets/images/discover_hover.svg" alt="" />
+              <p>Discover</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img src="assets/icons/love_8647296.png" alt="" />
+              <p>Saved</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <script type="text/javascript">
-      $('#noscroll').click(function (e) {
+      $("#noscroll").click(function (e) {
         doSomething();
         return false;
       });
@@ -10282,7 +10428,7 @@
     <script src="assets/js/custom.js"></script>
 
     <script>
-      $('.loop').owlCarousel({
+      $(".loop").owlCarousel({
         center: true,
         items: 5,
         loop: true,
@@ -10305,7 +10451,7 @@
           },
         },
       });
-      $('.nonloop').owlCarousel({
+      $(".nonloop").owlCarousel({
         center: true,
         items: 5,
         loop: true,
@@ -10325,7 +10471,7 @@
           },
         },
       });
-      $('.black-history').owlCarousel({
+      $(".black-history").owlCarousel({
         center: true,
         items: 4,
         loop: true,
