@@ -653,6 +653,7 @@ jQuery(document).ready(function ($) {
     centerMode: false,
     adaptiveHeight: true,
     centerPadding: "0px",
+
     responsive: [
       {
         breakpoint: 1199,
@@ -682,7 +683,8 @@ jQuery(document).ready(function ($) {
           // arrows: false,
           // nashnash
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
+          swipeToSlide: true,
         },
       },
     ],
@@ -729,6 +731,7 @@ jQuery(document).ready(function ($) {
           // arrows: false,
           slidesToShow: 2,
           slidesToScroll: 1,
+          touchThreshold: 10,
         },
       },
     ],
