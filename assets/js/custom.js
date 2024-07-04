@@ -680,8 +680,9 @@ jQuery(document).ready(function ($) {
         breakpoint: 480,
         settings: {
           // arrows: false,
+          // nashnash
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         },
       },
     ],

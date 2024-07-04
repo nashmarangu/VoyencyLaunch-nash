@@ -420,6 +420,28 @@
         margin-right: auto;
         margin-left: auto;
       }
+      @media (max-width: 479px) {
+        .tripiry_footer {
+          padding: 30px 10px 80px;
+        }
+      }
+      @media (max-width: 490px) {
+        .hotDeals-slider .blgm_othr_cnt_part:hover {
+          transform: none !important;
+          transition: none;
+        }
+      }
+      @media (max-width: 479px) {
+        .blgm_othr_cnt_part:hover .blgm_othr_cnt_part_btm h4 {
+          font-size: 18px;
+          font-weight: 300;
+        }
+        /* .hotDeals-slider {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scroll-behavior: smooth;
+        } */
+      }
     </style>
 
     <!-- END-CUSTOM-CSS -->
@@ -11174,6 +11196,44 @@
             icon2.style.display = "inline";
           }
         });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function handleItemClick(event) {
+          if (window.innerWidth <= 500) {
+            const cardText = event.currentTarget.querySelector(".card-text");
+            if (cardText) {
+              cardText.style.opacity =
+                cardText.style.opacity === "1" ? "0" : "1";
+            }
+          }
+        }
+
+        function setupCardInteractions() {
+          const items = document.querySelectorAll(".item");
+
+          if (window.innerWidth <= 500) {
+            items.forEach((item) => {
+              item.addEventListener("click", handleItemClick);
+            });
+          } else {
+            items.forEach((item) => {
+              item.removeEventListener("click", handleItemClick);
+              const cardText = item.querySelector(".card-text");
+              if (cardText) {
+                cardText.style.opacity = "";
+              }
+            });
+          }
+        }
+
+        // Initial setup
+        setupCardInteractions();
+
+        // Update on resize
+        window.addEventListener("resize", setupCardInteractions);
       });
     </script>
   </body>
