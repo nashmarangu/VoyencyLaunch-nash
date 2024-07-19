@@ -680,11 +680,15 @@ jQuery(document).ready(function ($) {
       {
         breakpoint: 480,
         settings: {
-          // arrows: false,
-          // nashnash
+          // slidesToShow: 2,
+          // slidesToScroll: 2,
+          // swipeToSlide: true,
           slidesToShow: 2,
-          // slidesToScroll: 1,
+          slidesToScroll: 2,
           swipeToSlide: true,
+          touchThreshold: 10,
+          speed: 500,
+          cssEase: "linear",
         },
       },
     ],
